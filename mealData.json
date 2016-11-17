@@ -1,0 +1,434 @@
+[{
+		"_id" : "b7f826ba-5589-4266-85d9-a43fe14de6c0",
+		"breakfast" : [{
+				"meal_name" : "Carrot cake protien Oatmeal",
+				"ingredients" : [{
+						"name" : "Carrot",
+						"amount" : "1"
+					}, {
+						"name" : "oatmeal",
+						"amount" : "20 gms"
+					}, {
+						"name" : "sugar",
+						"amount" : "6 gms"
+					}
+				],
+				"recipe_instructions" : [
+					"Cook Oatmeal with water or milk",
+					"Add cut carrots",
+					"Add sugar and mix well"
+				],
+				"Protein" : 23,
+				"Fat" : 20,
+				"fibre" : 6,
+				"Calories" : 265,
+				"type" : "vegetarian"
+			}, {
+				"meal_name" : "Egg and Toast",
+				"ingredients" : [{
+						"name" : "Egg",
+						"amount" : "2"
+					}, {
+						"name" : "bread",
+						"amount" : "1 slice"
+					}
+				],
+				"recipe_instructions" : [
+					"Fry eggs",
+					"toast bread",
+					"Place eggs on top of toast"
+				],
+				"Protein" : 26,
+				"Fat" : 26,
+				"fibre": 6,
+				"Calories" : 100,
+				"type" : "vegetarian"
+			},
+            {
+				"meal_name" : "Green smoothie",
+				"ingredients" : [
+                    {
+						"name" : "water",
+						"amount" : "1 cup"
+					}, 
+                    {
+						"name" : "chopped kale",
+						"amount" : "1 cup"
+					},
+                    {
+						"name" : "whey vanilla protein powder",
+						"amount" : "1 scoop"
+					}, 
+                    {
+						"name" : "fresh ginger",
+						"amount" : "1 tsp"
+					},
+                    {
+						"name" : "granny smith apple",
+						"amount" : "0.5 medium apple"
+					}, 
+                    {
+						"name" : "frozen berries",
+						"amount" : "1 cup"
+					}
+				],
+				"recipe_instructions" : [
+					"Combine the water and kale in a blender and blend until kale is in tiny pieces.",
+					"Add in the rest of the ingredients and blend until smooth and foamy.",
+					"Pour into a cup and enjoy! Makes 2 servings."
+				],
+				"Protein" : 10,
+			    "Fat" : 1.25,
+			    "Carbs" : 18,
+			    "Calories" : 122,
+                "Fiber": 5.4,
+			    "type" : "vegetarian"
+			},
+            {"meal_name" : "Veggie egg muffins",
+				"ingredients" : [
+                    {
+						"name" : "olive oil",
+						"amount" : "1 Tbsp"
+					}, 
+                    {
+						"name" : "yellow onion, chopped",
+						"amount" : "0.5 onion"
+					},
+                    {
+						"name" : "garlic cloves, minced",
+						"amount" : "2 cloves"
+					}, 
+                    {
+						"name" : "zucchini, shredded",
+						"amount" : "0.5 zucchini"
+					},
+                    {
+						"name" : "red bell pepper, chopped",
+						"amount" : "1 pepper"
+					}, 
+                    {
+						"name" : "large eggs",
+						"amount" : "8 eggs"
+					},
+                    {
+						"name" : "argula, roughly chopped",
+						"amount" : "2 cups"
+					},
+                    {
+						"name" : "shredded Parmesan cheese",
+						"amount" : "0.5 cups"
+					}, 
+                    {
+						"name" : "salt and pepper",
+						"amount" : "to taste"
+					}
+				],
+				"recipe_instructions" : [
+					"Preheat oven to 375 degrees F. Coat a muffin tin with spray and set aside.",
+                    "In a large skillet on medium heat, drizzle olive oil and saute onion and garlic for about 4 minutes until tender and fragrant.", 
+                    "Add in zucchini and red bell pepper, cooking an additional 2 minutes. Fill each muffin tin about ⅔ full with veggie mixture.",
+                    "In a large bowl, whisk together eggs, arugula, cheese and salt/pepper and fill each muffin tin evenly, being careful not to over-fill.",
+                    "Bake muffins for about 20 minutes, until they've risen and are slightly browned. Enjoy!",
+                    "Serving size: 1 muffin"
+				],
+				"Protein" : 5.1,
+			    "Fat" : 4.9,
+			    "Carbs" : 2.5,
+			    "Calories" : 75,
+                "Fiber": 0.5,
+			    "type" : "vegetarian"
+			}
+		],
+		"lunch" : [{
+				"meal_name" : "Healthy Cauliflower Fried Rice",
+				"ingredients" : [
+                    {
+						"name" : "cauliflower, chopped into florets",
+						"amount" : "1 head"
+					}, {
+						"name" : "yellow onion, finely chopped",
+						"amount" : "1 small onion"
+					},
+                    {
+						"name" : "fozen peas",
+						"amount" : "0.5 cup"
+					}, {
+						"name" : "carrots, cubed",
+						"amount" : "0.5 cups"
+					},
+                    {
+						"name" : "eggs, beaten",
+						"amount" : "2 eggs"
+					}, {
+						"name" : "sesame oil",
+						"amount" : "1 Tbsp"
+					},
+                    {
+						"name" : "low sodium soy sauce",
+						"amount" : "0.25 cups"
+					}, {
+						"name" : "light brown sugar",
+						"amount" : "1 Tbsp"
+					},
+                    {
+						"name" : "ground ginger",
+						"amount" : "0.25 tsp"
+					}, {
+						"name" : "red pepper flakes",
+						"amount" : "1 pinch"
+					},
+                    {
+						"name" : "green onions, chopped",
+						"amount" : "2 Tbsp"
+					}
+				],
+				"recipe_instructions" : [
+					"Chop head of cauliflower into florets and place in food processor.", 
+                    "Pulse until it starts to resemble rice; set aside.",
+                    "Heat a large wok (or skillet) over medium heat and drizzle in sesame oil. Add onion, peas and carrots and saute until tender, about 2 minutes.",
+                    "Meanwhile in a small bowl, whisk together soy sauce, brown sugar, ginger and red pepper flakes; set aside.",
+                    "Slide veggie mixture to one side of the wok and add in the beaten eggs, scrambling until cooked through and then incorporate with the veggies.",
+                    "Stir in cauliflower rice and pour the soy sauce over top, mixing well. Cook for an additional 3 to 4 minutes, until cauliflower is soft and tender.",
+                    "Top with green onions, serve and enjoy!",
+                    "Serving Size: 1¼ cup "
+				],
+				"Protein" : 6.5,
+				"Fat" : 6.3,
+				"Carbs" : 13.5,
+				"Calories" : 131,
+                "Fiber" : 3,
+				"type" : "vegetarian"
+			},
+            {
+				"meal_name" : "Tilapia Tacos with Peach Mango Salsa",
+				"ingredients" : [
+                    {
+						"name" : "4oz tilapia fillets",
+						"amount" : "3 fillets"
+					}, 
+                    {
+						"name" : "olive oil",
+						"amount" : "1/4 cup"
+					},
+                    {
+						"name" : "fresh lemon juice",
+						"amount" : "2 Tbsp"
+					}, 
+                    {
+						"name" : "fresh parsley, minced",
+						"amount" : "1 Tbsp"
+					},
+                    {
+						"name" : "dried basil",
+						"amount" : "1 tsp"
+					}, 
+                    {
+						"name" : "black pepper",
+						"amount" : "1 tsp"
+					},
+                    {
+						"name" : "salt",
+						"amount" : "1/2 tsp"
+					}, 
+                    {
+						"name" : "peach mango salsa",
+						"amount" : "3/4 cup"
+					},
+                    {
+						"name" : "corn tortillas",
+						"amount" : "6 tortillas"
+					}, 
+                    {
+						"name" : "fresh cilantro leaves",
+						"amount" : "1/2 cup"
+					}
+				],
+				"recipe_instructions" : [
+					"Place tilapia fillets in a large plastic zip-lock bag and set aside.", 
+                    "Whisk together olive oil, lemon juice, parsley, garlic, basil, salt and pepper and pour all over the fish, making sure to coat each fish completely.", 
+                    "Allow fish to marinate in the fridge for at least an hour.",
+                    "Preheat your grill on medium-high heat and lightly coat with oil so the fish won't stick.",
+                    "Place tilapia fillets on the grill and cook for about 3 to 4 minutes on each side until the fish is opaque and flakes easily with a fork.",
+                    "Meanwhile, brush the tortillas lightly with oil and place on the grill for about 20 seconds.",
+                    "Fill warm tortillas with the cooked tilapia, 2 tablespoons of peach mango salsa and top with some cilantro. Enjoy!",
+                    "serving size: 1 taco"
+				],
+				"Protein" : 11.8,
+				"Fat" : 7.2,
+				"Carbs" : 17.9,
+				"Calories" : 150.5,
+                "Fiber": 2.3,
+				"type" : "non-vegetarian"
+			}
+		],
+		"dinner" : [
+            {
+				"meal_name" : "Zucchini Noodles with Creamy Avocado Pesto",
+				"ingredients" : [
+                    {
+						"name" : "zuccini, spiralized",
+						"amount" : "6 large zucchini"
+					}, {
+						"name" : "olive oil",
+						"amount" : "1 Tbsp"
+					},
+                    {
+						"name" : "ripe avocados",
+						"amount" : "2 avocados"
+					}, {
+						"name" : "fresh basil leaves",
+						"amount" : "1 cup"
+					},
+                    {
+						"name" : "garlic cloves",
+						"amount" : "3 cloves"
+					}, 
+                    {
+						"name" : "pine nuts",
+						"amount" : "1/4 cup"
+					},
+                    {
+						"name" : "lemon juice",
+						"amount" : "2 Tbsp"
+					}, {
+						"name" : "sea salt",
+						"amount" : "1/2 tsp"
+					},
+                    {
+						"name" : "olive oil",
+						"amount" : "3 Tbsp"
+					}, 
+                    {
+						"name" : "cracked black pepper",
+						"amount" : "to taste"
+					}
+				],
+				"recipe_instructions" : [
+					"Spiralize your zucchini and set aside on paper towels so that any excess water is soaked up.",
+                    "In a food processor, add avocados, basil leaves, garlic, pine nuts, lemon juice and sea salt and pulse until finely chopped.", 
+                    "Then with the motor still running, add olive oil in a slow stream until emulsified and creamy.",
+                    "Drizzle olive oil in a large skillet over medium high heat then add zucchini noodles, cooking for about 1 to 2 minutes until tender.",
+                    "Add zucchini noodles to a large bowl and toss with avocado pesto. Season with cracked pepper and a little Parmesan, serve and enjoy!",
+                    "Serving Size: 1 1/2 cup"
+				],
+				"Protein" : 4.8,
+				"Fat" : 17.1,
+				"Carbs" : 13.2,
+				"Calories" : 214,
+                "Fiber" : 6.1,
+				"type" : "vegetarian"
+			},
+            {
+				"meal_name" : "Lemon Chicken with Thyme",
+				"ingredients" : [
+                    {
+						"name" : "chicken breast",
+						"amount" : "3-4 breasts"
+					}, 
+                    {
+						"name" : "fresh lemon juice",
+						"amount" : "2 lemons"
+					},
+                    {
+						"name" : "lemon zest",
+						"amount" : "1 lemon"
+					}, 
+                    {
+						"name" : "garlic cloves, minced",
+						"amount" : "2 cloves"
+					},
+                    {
+						"name" : "fresh thyme",
+						"amount" : "1 Tbsp"
+					}, 
+                    {
+						"name" : "black pepper",
+						"amount" : "1 tsp"
+					},
+                    {
+						"name" : "sea salt",
+						"amount" : "1/2 tsp"
+					}
+                    
+				],
+				"recipe_instructions" : [
+					"Preheat oven to 375 degrees F.",
+                    "Whisk together lemon juice, lemon zest, garlic, thyme, salt and pepper; set aside.",
+                    "Place chicken breasts in a baking dish and pour mixture over top, making sure to completely coat them.",
+                    "Bake for about 40 minutes (depending on size of chicken) until juices run clear. Enjoy!"
+				],
+				"Protein" : 25,
+				"Fat" : 4,
+				"Carbs" : 2.4,
+				"Calories" : 150,
+                "Fiber": 0.08,
+				"type" : "non-vegetarian"
+			}
+        ],
+        "snack" : [{
+            "meal_name": "homemade trail mix",
+            "ingredients": [
+    				{
+      					"name": "roasted sea salted cashews",
+      					"amount": "1 cup"
+    				},
+                    {
+      					"name": "raw pecans",
+      					"amount": "1 cup"
+    				},
+                    {
+      					"name": "organic dried cranberries",
+      					"amount": "1 cup"
+    				}
+                ],
+            "recipe_instructions" : [
+					"Combine the ingredients in a bowl.",
+					"Divide into 8 servings.",
+					"Enjoy!"
+				],
+            "Protein" : 6.5,
+			"Fat" : 25,
+			"Carbs" : 23.2,
+			"Calories" : 320,
+            "Fiber": 1.9,
+			"type" : "vegetarian"
+    },
+    {
+            "meal_name": "microwaved baked apple",
+            "ingredients": [
+    				{
+      					"name": "medium apple",
+      					"amount": "1 apple"
+    				},
+                    {
+      					"name": "cornstarch",
+      					"amount": "0.5 tsp"
+    				},
+                    {
+      					"name": "cinnamon",
+      					"amount": "0.5 tsp"
+    				},
+                    {
+      					"name": "water",
+      					"amount": "1 oz"
+    				},
+                    {
+      					"name": "sugar",
+      					"amount": "1 tsp"
+    				}
+                ],
+            "recipe_instructions" : [
+					"Remove the core of the apple and cut into small wedges.",
+					"Add wedges to a bowl and sprinkle the cornstarch, cinnamon, water, and sugar on top.",
+					"Microwave covered for about 1 minute.",
+                    "Remove from microwave and mix apple pieces into the juices at the bottom of the bowl.",
+                    "Enjoy!"
+				],
+            "Protein" : 0,
+			"Fat" : 0,
+			"Carbs" : 27.8,
+			"Calories" : 101,
+            "Fiber": 5.3,
+			"type" : "vegetarian"
+    }]
+	}]
