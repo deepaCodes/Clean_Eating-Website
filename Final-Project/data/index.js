@@ -1,12 +1,14 @@
-const mealCollectionRoutes = require("./meal_collection");
+const mealCollectionData = require("./meal_collection");
+const userCollectionData = require("./user_collection");
 //const commentsRoutes = require("./comments");
 
 
-let constructorMethod = (app) => {
-    app.use("/meal_collection", mealCollectionRoutes);
-};
+//let constructorMethod = (app) => {
+//    app.use("/meal_collection", mealCollectionRoutes);
+//};
 
 module.exports = {
-    meal_collection: require("./meal_collection"),
+    meal_collection: mealCollectionData,
+    user_collection: userCollectionData
    // comments: require("./comments")
 };

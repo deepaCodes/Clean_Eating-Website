@@ -19,5 +19,7 @@ let getCollectionFn = (collection) => {
 /* Now, you can list your collections here: */
 module.exports = {
         meal_collection: getCollectionFn("meal_collection"),
+        user_collection: getCollectionFn("user_collection"),
+        comment_collection: getCollectionFn("comment_collection")
 };
 

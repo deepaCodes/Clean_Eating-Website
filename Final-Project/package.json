@@ -1,14 +1,14 @@
 {
-  "name": "lecture_6",
+  "name": "CleanEatingWebsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "clean eating website, final project",
   "main": "app.js",
   "scripts": {
     "seed": "node ./tasks/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "",
+  "author": "Janina Grayson and Deepa Aswathaiah",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
