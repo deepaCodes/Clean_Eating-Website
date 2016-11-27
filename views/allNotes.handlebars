@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-sm-12 col-md-6">      
+        
+        <table class="table">
+  <tr>
+    <th>Due Date</th>
+    <th>Title</th>
+    <th>Summary</th> 
+    <th>Link</th>
+  </tr>
+  {{#each noteItems}} 
+  <tr>
+    <td>{{fileInfo.dueDate}}</td>
+    <td>{{fileInfo.title}}</td>
+    <td>{{fileInfo.summary}}</td>
+    <td><a href="/notes/{{fileInfo.id}}">{{fileInfo.title}}</a></td>
+  </tr>
+  {{/each}}
+</table>
+    </div>
+</div>
+
+

@@ -1,0 +1,53 @@
+<h2>User Profile Page</h2>
+
+<h3>User Information</h3>
+<ul>
+  <li>Name: {{user.profile.name}}</li>
+  <li>Username: {{user.profile.user_name}}</li>
+  <li>Weight: {{user.profile.weight}}lbs</li>
+  <li>Height: {{user.profile.height}} inches</li>
+  <li>Age: {{user.profile.age}}</li>
+  <li>Weight Goal: {{user.profile.weightGoal}}lbs</li>
+  <li>Cholesterol level: {{user.profile.cholesterol}}</li>
+  <li>Vegetarian?: {{user.profile.vegetarian}}</li>
+  <li>Diet option: {{user.profile.dietOption}}</li>
+</ul> 
+
+<h3>Edit Profile</h3>
+<a href="../notes/">GO TO EDIT PROFILE PAGE</a>
+
+<h3>Generate/See Meals</h3>
+
+<a href="../notes/">GENERATE ALL MEAL OPTIONS</a>
+
+<table>
+  <tr>
+    <th>Meal Category</th>
+    <th>Meal Option</th>
+    <th>Re-Generate?</th>
+  </tr>
+  <tr>
+    <td>Breakfast</td>
+    <td>meal name generated goes here as link, will show details on another page <a href="/notes/{{fileInfo.id}}">{{fileInfo.title}}</a></td>
+    <td>Re-generate breakfast link</td>
+  </tr>
+  <tr>
+    <td>Lunch</td>
+    <td>meal name generated goes here as link, will show details on another page </td>
+    <td>Re-generate lunch link</td>
+  </tr>
+  <tr>
+    <td>Dinner</td>
+    <td>meal name generated goes here as link, will show details on another page</td>
+    <td>Re-generate dinner link</td>
+  </tr>
+  <tr>
+    <td>Snack</td>
+    <td>meal name generated goes here as link, will show details on another page</td>
+    <td>Re-generate snack link</td>
+  </tr>
+</table>
+
+<h3>User's most recent comments</h3>
+
+
