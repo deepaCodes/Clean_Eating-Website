@@ -259,6 +259,112 @@
 				"Calories" : 150.5,
                 "Fiber": 2.3,
 				"type" : "non-vegetarian"
+			},
+			{
+				"meal_name" : "Springmix salad with feta",
+				"ingredients" : [
+                    {
+						"name" : "baby spring mix",
+						"amount" : "1 cup"
+					}, 
+                    {
+						"name" : "breaded chicken",
+						"amount" : "10 oz"
+					},
+                    {
+						"name" : "fresh lemon juice",
+						"amount" : "2 Tbsp"
+					}, 
+                    {
+						"name" : "fresh parsley, minced",
+						"amount" : "1 Tbsp"
+					},
+                    {
+						"name" : "feta",
+						"amount" : "5 oz"
+					}, 
+                    {
+						"name" : "black pepper",
+						"amount" : "1 tsp"
+					},
+                    {
+						"name" : "salt",
+						"amount" : "1/2 tsp"
+					}, 
+                    {
+						"name" : "balsamic vinaigrette",
+						"amount" : "1 Tbsp"
+					},
+					{
+						"name" : "oilve oil",
+						"amount" : "1 Tbsp"
+					}
+				],
+				"recipe_instructions" : [
+					"Whisk together olive oil,balsamic vinaigrette, lemon juice, parsley, salt and pepper", 
+                    "Combine spring mix,feta and chicken in a bowl",
+                    "Add the liquid mixture to the bowl and mix well",
+                    "Serve in a bowl"
+   				],
+				"Protein" : 13.55,
+				"Fat" : 33.45,
+				"Carbs" : 13.07,
+				"Calories" : 393.0,
+                "Fiber": 4.6,
+				"type" : "non-vegetarian"
+			},
+			{
+				"meal_name" : "Romaine salad with avocado",
+				"ingredients" : [
+                    {
+						"name" : "Romaine/iceberg blend",
+						"amount" : "1 cup"
+					}, 
+                    {
+						"name" : "tofu",
+						"amount" : "10 oz"
+					},
+                    {
+						"name" : "fresh lemon juice",
+						"amount" : "2 Tbsp"
+					}, 
+                    {
+						"name" : "fresh parsley, minced",
+						"amount" : "1 Tbsp"
+					},
+                    {
+						"name" : "avocado",
+						"amount" : "5 oz"
+					}, 
+                    {
+						"name" : "black pepper",
+						"amount" : "1 tsp"
+					},
+                    {
+						"name" : "salt",
+						"amount" : "1/2 tsp"
+					}, 
+                    {
+						"name" : "balsamic vinaigrette",
+						"amount" : "1 Tbsp"
+					},
+					{
+						"name" : "oilve oil",
+						"amount" : "1 Tbsp"
+					}
+				],
+				"recipe_instructions" : [
+					"Whisk together olive oil,balsamic vinaigrette, lemon juice, parsley, salt and pepper", 
+                    "Combine romaine,avocado and tofu in a bowl",
+                    "Add the liquid mixture to the bowl and mix well",
+                    "Serve in a bowl"
+   				],
+				"Protein" : 7.55,
+				"Fat" : 26.45,
+				"Carbs" : 14.07,
+				"Calories" : 300.0,
+                "Fiber": 5.7,
+				"type" : "vegetarian"
 			}
 		],
 		"dinner" : [
@@ -363,6 +469,100 @@
 				"Calories" : 150,
                 "Fiber": 0.08,
 				"type" : "non-vegetarian"
+			},
+			{
+				"meal_name" : "Teriyaki Salmon",
+				"ingredients" : [
+                    {
+						"name" : "salmon",
+						"amount" : "162 gm"
+					}, 
+                    {
+						"name" : "sesame oil",
+						"amount" : "1/4 cup"
+					},
+                    {
+						"name" : "fresh lemon juice",
+						"amount" : "1/4 cup"
+					}, 
+                    {
+						"name" : "soya sauce",
+						"amount" : "1/4 cup"
+					},
+                    {
+						"name" : "ginger",
+						"amount" : "1 tsp"
+					}, 
+                    {
+						"name" : "ground mustard",
+						"amount" : "1 tsp"
+					},
+                    {
+						"name" : "salt",
+						"amount" : "1/2 tsp"
+					}
+				],
+				"recipe_instructions" : [
+					"Mix sesame oil, lemon juice, soy sauce, ground mustard and ginger in a small saucepan over low heat. Bring to a simmer. Set aside 1/2 cup of marinade for basting.", 
+                    "Pour remaining marinade into a resealable plastic bag and place salmon into the marinade. Squeeze air out of the bag, seal, and marinate the salmon steaks for at least 1 hour (2 hours for better flavor). Drain and discard used marinade.",
+                    "Set oven rack about 4 inches from the heat source and preheat the oven's broiler. Place salmon steaks into a broiler pan and broil for 5 minutes. Brush steaks with reserved marinade, turn, and broil until fish is opaque and flakes easily, about 5 more minutes. Brush again with marinade.",
+                    "Serve in a plate"
+   				],
+				"Protein" : 28.00,
+				"Fat" : 8.00,
+				"Carbs" : 9.00,
+				"Calories" : 230.0,
+                "Fiber": 0.0,
+				"type" : "non-vegetarian"
+			},
+			{
+				"meal_name" : "Tofu Bibimbap",
+				"ingredients" : [
+                    {
+						"name" : "cooked rice",
+						"amount" : "1 cup"
+					}, 
+                    {
+						"name" : "sesame oil",
+						"amount" : "1/4 cup"
+					},
+                    {
+						"name" : "carrot",
+						"amount" : "1/4 cup"
+					}, 
+                    {
+						"name" : "soya sauce",
+						"amount" : "1/4 cup"
+					},
+                    {
+						"name" : "zucchini",
+						"amount" : "1/4 cup"
+					}, 
+                    {
+						"name" : "greenonion",
+						"amount" : "1/3 cup"
+					},
+                    {
+						"name" : "salt",
+						"amount" : "1/2 tsp"
+					},
+					,
+                    {
+						"name" : "pepper",
+						"amount" : "1/2 tsp"
+					}
+				],
+				"recipe_instructions" : [
+					"Heat sesame oil in a large skillet over medium heat; cook and stir carrot and zucchini in the hot oil until vegetables begin to soften, about 5 minutes.Cook and stir until carrots are tender, about 5 more minutes. Season to taste with salt and set vegetables aside.",
+					"Stir cooked rice, green onions, soy sauce, and black pepper in the same skillet until the rice is hot.",
+					"To serve, divide hot cooked rice mixture between 3 serving bowls and top each bowl with 1/3 of the vegetable mixture. Serve sweet red chili sauce on the side for mixing into bibimbap."
+   				],
+				"Protein" : 8.00,
+				"Fat" : 3.00,
+				"Carbs" : 32.00,
+				"Calories" : 182.0,
+                "Fiber": 0.0,
+				"type" : "vegetarian"
 			}
         ],
         "snack" : [{
@@ -393,7 +593,7 @@
             "Fiber": 1.9,
 			"type" : "vegetarian"
     },
-    {
+	{
             "meal_name": "microwaved baked apple",
             "ingredients": [
     				{
@@ -430,5 +630,52 @@
 			"Calories" : 101,
             "Fiber": 5.3,
 			"type" : "vegetarian"
-    }]
+    },
+	{
+            "meal_name": "Popcorn",
+            "ingredients": [
+    				{
+      					"name": "corn",
+      					"amount": "3 cups"
+    				},
+                    {
+      					"name": "salt",
+      					"amount": "1 tsp"
+    				}
+                ],
+            "recipe_instructions" : [
+					"Add corn in a pan and air pop on a stove",
+					"Add salt to popped corn",
+					"Enjoy!"
+				],
+            "Protein" : 2.9,
+			"Fat" : 1,
+			"Carbs" : 3.6,
+			"Calories" :92,
+            "Fiber": 3.6,
+			"type" : "vegetarian"
+    },
+	{
+            "meal_name": "Baby carrot and hummus",
+            "ingredients": [
+    				{
+      					"name": "carrots",
+      					"amount": "1 cup"
+    				},
+                    {
+      					"name": "hummus",
+      					"amount": "2 Tbsp"
+    				}
+                ],
+            "recipe_instructions" : [
+					"Dip baby carrots in hummus",
+					"Enjoy!"
+				],
+            "Protein" : 2.9,
+			"Fat" : 1,
+			"Carbs" : 3.6,
+			"Calories" :92,
+            "Fiber": 3.6,
+			"type" : "vegetarian"
+		}]
 	}]
