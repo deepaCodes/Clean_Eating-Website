@@ -1,0 +1,23 @@
+
+  <div  class="container">
+
+    <h3 style="font-size: 3rem;color: #E29013;">Meal details</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+         
+            <tr><td>Meal Name:{{meal.meal_name}} </td> </tr> 
+            <tr><td>Ingredients:<br>
+                {{#each meal.ingredients}}
+                {{this.name}}<br> {{this.amount}}
+                {{/each}}
+            
+             </td> </tr>     
+            <tr><td>Recipe Instructions:{{meal.recipe_instructions}}</td> </tr>     
+                
+         </tbody>
+    </table>
+
+    </div>
+    
+  

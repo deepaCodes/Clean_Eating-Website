@@ -1,0 +1,86 @@
+<h2>User Profile Page</h2>
+
+ <div  class="container">
+
+    <h3 style="font-size: 3rem;color: #E29013;">User Information</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+         
+            <tr><td>Name: {{user.profile.name}}  </td> </tr> 
+            <tr><td>Username: {{user.profile.user_name}}  </td> </tr>     
+            <tr><td>Weight: {{user.profile.weight}}lbs </td> </tr>     
+            <tr><td>Height: {{user.profile.height}}  </td> </tr>     
+            <tr><td>Age: {{user.profile.age}} </td> </tr>     
+            <tr><td>Vegetarian?: {{user.profile.vegetarian}} </td> </tr>     
+            <tr><td>Diet option: {{user.profile.dietOption}}</td> </tr>        
+         </tbody>
+    </table>
+    
+  <h3 style="font-size: 3rem;color: #E29013;">MEAL GENERATED</h3>
+  <h3 style="font-size: 3rem;color: #E29013;">Breakfast List</h3>
+
+<table class="table table-hover table-bordered table-striped">
+        <tbody>
+          {{#each breakfast}}
+            <tr>
+              <td><a href="/meal_collection/breakfast/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                    
+        </tbody>
+    </table>
+
+    <h3 style="font-size: 3rem;color: #E29013;">Lunch List</h3>
+
+<table class="table table-hover table-bordered table-striped">
+        <tbody>
+          {{#each lunch}}
+            <tr>
+              <td><a href="/meal_collection/lunch/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                   
+        </tbody>
+    </table>
+
+ <h3 style="font-size: 3rem;color: #E29013;">Dinner List</h3>
+
+<table class="table table-hover table-bordered table-striped">
+        <tbody>
+          {{#each lunch}}
+            <tr>
+              <td><a href="/meal_collection/dinner/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                     
+        </tbody>
+    </table>
+
+     <h3 style="font-size: 3rem;color: #E29013;">Snacks List</h3>
+
+<table class="table table-hover table-bordered table-striped">
+        <tbody>
+          {{#each lunch}}
+            <tr>
+              <td><a href="/meal_collection/snack/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                    
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
