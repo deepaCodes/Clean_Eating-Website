@@ -1,0 +1,56 @@
+<h2>Edit Your Profile</h2>
+
+ <div  class="container">
+
+    <h3 style="font-size: 3rem;color: #E29013;">Edit Profile Information</h3>
+
+     <form action="/meal_collection/editProfile" method="post">
+    <div class="form-group">
+            <label>Vegetarian?(true/false)</label>
+            <select name="vegetarian">
+                <option value=true>True</option>
+                <option value="false">False</option>
+            </select>
+     </div>
+      <div class="form-group">
+          <label>Diet Option</label>
+          
+          <select name="dietoption">
+                <option value="high protein">High Protein</option>
+                <option value="low protein">Low Protein</option>
+                <option value="high calorie">High Calorie</option>
+                <option value="low calorie">Low Calorie</option>
+                <option value="high fiber">High Fiber</option>
+                <option value="low fiber">Low Fiber</option>
+                <option value="high fat">High Fat</option>
+                <option value="low fat">Low Fat</option>
+            </select>
+      </div>
+      <div class="form-group">
+            <label>Cholesterol</label>
+            <input type="text" class="form-control" name="cholesterol" value="{{user.profile.cholesterol}}">
+     </div>
+      <div class="form-group">
+          <label>Weight Goal</label>
+          <input type="text" class="form-control" name="weightGoal" value="{{user.profile.weightGoal}}">
+      </div>
+      <div class="form-group">
+          <label>Weight</label>
+          <input type="text" class="form-control" name="weight" value="{{user.profile.weight}}">
+      </div>
+
+       <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+      </form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
