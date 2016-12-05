@@ -35,23 +35,28 @@ module.exports = function(passport) {
     },
   function(req,username, password, done) {
            
-      //hashed password
-      let hash = bcrypt.hashSync(xss(password));
-      
+          
       users().then((userCollecion)=>{
-            userCollecion.findOne({"profile.user_name":username}, function (err, user) {
+            userCollecion.findOne({"profile.user_name":xss(username)}, function (err, user) {
             if (err) { return done(err); }
             if (!user) {
                 return done(null, false, { message: 'Incorrect username.' });
             }
-            userCollecion.findOne({"profile.password":password},function (err,password){
+
+           if(!( bcrypt.compareSync(xss(password), user.hashedPassword))){
+                 return done(null, false, { message: 'Incorrect password.' });
+           }
+
+            return done(null, user);
+
+          /*  userCollecion.findOne({"profile.password":password},function (err,password){
                  if (err) { return done(err); }
                   if (!password) {
                 return done(null, false, { message: 'Incorrect password.' });
             }
-            });
+            });*/
             
-            return done(null, user);
+           
          });
       
       });

@@ -30,12 +30,10 @@ let exportedMethods = {
         return users().then((userCollection) => {
             let newUser = {
                 _id: uuid.v4(), 
-                sessionId: uuid.v4(), 
-                hashedPassword: uuid.v4(),
+                hashedPassword: password,
                 profile: {
                     name: name,
                     user_name: userName, 
-                    password:password,
                     weight: weight,
                     height: height,
                     age: age,
