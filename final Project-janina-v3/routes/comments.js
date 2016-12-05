@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const data = require("../data");
 const commentData = data.comments;
+const xss = require('xss');
 
 
 
@@ -18,8 +19,8 @@ router.get("/seeComments", (req, res) => {//keep this
 router.post("/addComment", (req, res) => {//keep this
     let commentInfo = req.body;
 //let username = req.user.profile.user_name;
-    let username = commentInfo.username;
-    let comment = commentInfo.comment;
+    let username = xss(commentInfo.username);
+    let comment = xss(commentInfo.comment);
 
     return commentData.addComment(username, comment)
         .then((newPost) => {
@@ -30,7 +31,7 @@ router.post("/addComment", (req, res) => {//keep this
 });
 
 router.get("/getUserComments", (req, res) => {//keep this
-    let username = req.user.profile.user_name;
+    let username = xss(req.user.profile.user_name);
     commentData.getUserComments(username).then((allComments) => {
         //res.json(allComments);
         res.render('websiteLayout/userComments',{ comment: allComments  });
@@ -40,7 +41,7 @@ router.get("/getUserComments", (req, res) => {//keep this
 });
 
 router.post("/deleteComment", (req, res) => {
-    let commentId = req.body.deleteRadio;
+    let commentId = xss(req.body.deleteRadio);
         return commentData.deleteComment(commentId) 
         .then(()=>{
             res.redirect('/comments/seeComments');

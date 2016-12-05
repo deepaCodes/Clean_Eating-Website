@@ -6,7 +6,7 @@ const userData = data.user_collection;
 
 
 router.get("/:id", (req, response) => {//works
-    userData.getUserById(req.params.id).then((user) => {
+    userData.getUserById(xss(req.params.id)).then((user) => {
         response.render("websiteLayout/userProfile",{ user: user });
     }).catch(() => {
         response.render("websiteLayout/userProfile",{ error: "User Not Found"});
@@ -23,7 +23,7 @@ router.get("/", (req, res) => {//works
 });
 
 router.post("/addUser", (req, res) => {//create a user, works
-    let userInfo = req.body;
+    let userInfo = xss(req.body);
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to create a user" });
@@ -64,7 +64,7 @@ router.post("/addUser", (req, res) => {//create a user, works
 });
 
 router.put("/:id", (req, res) => {//update a user, works
-    let userInfo = req.body;
+    let userInfo = xss(req.body);
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to update a user" });
@@ -110,8 +110,8 @@ router.put("/:id", (req, res) => {//update a user, works
 });
 
 router.delete("/:id", (req, res) => {//delete user, works
-    let user = userData.getUserById(req.params.id).then(() => {
-        return userData.removeUserProfile(req.params.id)
+    let user = userData.getUserById(xss(req.params.id)).then(() => {
+        return userData.removeUserProfile(xss(req.params.id))
             .then(() => {
                 res.sendStatus(200);
             }).catch(() => {

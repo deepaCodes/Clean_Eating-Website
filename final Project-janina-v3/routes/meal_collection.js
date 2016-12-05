@@ -4,6 +4,9 @@ const data = require("../data");
 const mealData = data.meal_collection;
 const userData = data.user_collection;
 var passport = require('passport');
+const bcrypt = require("bcrypt-nodejs");
+const xss = require('xss');
+
 
 
 const uuid = require('node-uuid');
@@ -38,7 +41,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("/editProfile", (req, res) => {
-    userData.getUserById(req.user._id).then((user) => {
+    userData.getUserById(xss(req.user._id)).then((user) => {
         res.render("websiteLayout/editProfile",{ user: user });
     }).catch(() => {
         res.render("websiteLayout/meal-user",{ error: "User Not Found"});
@@ -56,9 +59,18 @@ router.post('/login',
 
 //signup post
 router.post("/signup", (req, res) => {
-
-    userData.addUserProfile(req.body.name,req.body.username, req.body.password, req.body.weight, req.body.height, req.body.age,req.body.vegetarian,req.body.dietoption)
+    //hashed password
+      let hashpassword = bcrypt.hashSync(xss( req.body.password));
+      let name = xss(req.body.name);
+      let username = xss(req.body.username);
+      let weight = xss(req.body.weight);
+      let height =xss(req.body.height);
+      let age = xss(req.body.age);
+      let vegetarian = xss(req.body.vegetarian);
+      let dietoption= xss(req.body.dietoption);
+    userData.addUserProfile(name,username,hashpassword,weight,height,age,vegetarian,dietoption)
         .then((newUser) => {
+
                 res.redirect('/meal_collection/login');
         }, () => {
             res.sendStatus(500);
@@ -67,7 +79,7 @@ router.post("/signup", (req, res) => {
 
 //edit profile post
 router.post("/editProfile", (req, res) => {
-    let userInfo = req.body;
+    let userInfo = xss(req.body);
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to update a user" });
@@ -111,7 +123,7 @@ router.post("/editProfile", (req, res) => {
 router.get("/breakfast/:name", (req, res) => {
     let selectedMeal;
    breakfastList.forEach(function(meal) {
-       if(meal.meal_name==req.params.name){
+       if(meal.meal_name== xss(req.params.name)){
             selectedMeal= meal;
        }
    });
@@ -121,7 +133,7 @@ router.get("/breakfast/:name", (req, res) => {
 router.get("/lunch/:name", (req, res) => {
     let selectedMeal;
    lunchList.forEach(function(meal) {
-       if(meal.meal_name==req.params.name){
+       if(meal.meal_name==xss(req.params.name)){
             selectedMeal= meal;
        }
    });
@@ -131,7 +143,7 @@ router.get("/lunch/:name", (req, res) => {
 router.get("/dinner/:name", (req, res) => {
     let selectedMeal;
    dinnerList.forEach(function(meal) {
-       if(meal.meal_name==req.params.name){
+       if(meal.meal_name==xss(req.params.name)){
             selectedMeal= meal;
        }
    });
@@ -141,7 +153,7 @@ router.get("/dinner/:name", (req, res) => {
 router.get("/snack/:name", (req, res) => {
     let selectedMeal;
    snackList.forEach(function(meal) {
-       if(meal.meal_name==req.params.name){
+       if(meal.meal_name==xss(req.params.name)){
             selectedMeal= meal;
        }
    });
@@ -152,7 +164,7 @@ router.get("/snack/:name", (req, res) => {
 
 //generate meals
 router.get("/generateMeals", (req, res) => {
-        var userInfo = req.user;
+        var userInfo = xss(req.user);
 console.log("---username "+JSON.stringify(userInfo));
      breakfastList=[];
      lunchList= [];
@@ -196,7 +208,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                     });
                                     break;
 
-                case "low protien":  mealData.getAllmeals().then((mealList) => {
+                case "low protein":  mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
                                                         if(bf.type== "vegetarian" && parseInt(bf.Protein)<15){
@@ -474,7 +486,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                     });
                                      break;
 
-                case "low protien":  mealData.getAllmeals().then((mealList) => {
+                case "low protein":  mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
                                                         if(bf.type== "non-vegetarian" && parseInt(bf.Protein)<15){
@@ -736,7 +748,7 @@ router.get("/meals", (req, res) => {
 
 
 router.post("/addMeals", (req, res) => {
-    let inputData = req.body;
+    let inputData = xss(req.body);
     console.log(inputData);
     inputData._id= uuid.v4();
     console.log(JSON.stringify(inputData));
@@ -750,12 +762,12 @@ router.post("/addMeals", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-    let updatedData = req.body;
+    let updatedData = xss(req.body);
 
     let getPost = mealData.getRecipieById(req.params.id);
 
     getPost.then(() => {
-        return mealData.updateRecipe(req.params.id, updatedData)
+        return mealData.updateRecipe(xss(req.params.id), updatedData)
             .then((updatedrecipie) => {
                 res.json(updatedrecipie);
             }).catch((e) => {
@@ -767,10 +779,10 @@ router.put("/:id", (req, res) => {
 
 });
 router.delete("/meals/:id", (req, res) => {
-    let getPost = mealData.getMealById(req.params.id);
+    let getPost = mealData.getMealById(xss(req.params.id));
 
     getPost.then(() => {
-        return mealData.removerecipie(req.params.id)
+        return mealData.removerecipie(xss(req.params.id))
             .then(() => {
                 res.sendStatus(200);
             }).catch((e) => {
