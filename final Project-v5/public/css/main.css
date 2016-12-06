@@ -1,0 +1,51 @@
+body {
+    background: #FEFEFE;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 15pt;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+
+header {
+    border-bottom: 1px solid #AFAFAF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type:circle;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
