@@ -42,7 +42,7 @@ module.exports = function(passport) {
             if (!user) {
                 return done(null, false, { message: 'Incorrect username.' });
             }
-
+            let answer = bcrypt.compareSync(xss(password), user.hashedPassword);
            if(!( bcrypt.compareSync(xss(password), user.hashedPassword))){
                  return done(null, false, { message: 'Incorrect password.' });
            }

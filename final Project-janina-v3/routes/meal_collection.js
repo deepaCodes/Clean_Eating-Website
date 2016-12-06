@@ -79,14 +79,14 @@ router.post("/signup", (req, res) => {
 
 //edit profile post
 router.post("/editProfile", (req, res) => {
-    let userInfo = xss(req.body);
+    let userInfo = req.body;
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to update a user" });
         return;
     }
 
-    if (!userInfo.cholesterol) {
+    if (!xss(userInfo.cholesterol)) {
         res.status(400).json({ error: "You must provide a cholesterol level" });
         return;
     }

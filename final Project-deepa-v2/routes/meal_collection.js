@@ -196,7 +196,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                     });
                                     break;
 
-                case "low protien":  mealData.getAllmeals().then((mealList) => {
+                case "low protein":  mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
                                                         if(bf.type== "vegetarian" && parseInt(bf.Protein)<15){

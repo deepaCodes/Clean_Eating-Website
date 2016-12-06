@@ -29,8 +29,7 @@ let exportedMethods = {
         console.log("veg and diet option "+vegetarian +" "+mealoption);
         return users().then((userCollection) => {
             let newUser = {
-                _id: uuid.v4(), 
-                sessionId: uuid.v4(), 
+                _id: uuid.v4(),  
                 hashedPassword: uuid.v4(),
                 profile: {
                     name: name,
