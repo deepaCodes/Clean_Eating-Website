@@ -52,7 +52,7 @@ router.get("/editProfile", (req, res) => {
 
 router.post('/login',
   passport.authenticate('local', { successRedirect: '/meal_collection/editProfile',
-                                   failureRedirect: '/meal_collection/',
+                                   failureRedirect: '/meal_collection/login',
                                    failureFlash: true
                                    })
 );
@@ -61,6 +61,7 @@ router.post('/login',
 router.post("/signup", (req, res) => {
     //hashed password
       let hashpassword = bcrypt.hashSync(xss( req.body.password));
+
       let name = xss(req.body.name);
       let username = xss(req.body.username);
       let weight = xss(req.body.weight);
@@ -79,29 +80,29 @@ router.post("/signup", (req, res) => {
 
 //edit profile post
 router.post("/editProfile", (req, res) => {
-    let userInfo = xss(req.body);
+    let userInfo = req.body;
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to update a user" });
         return;
     }
 
-    if (!userInfo.cholesterol) {
+    if (!xss(userInfo.cholesterol)) {
         res.status(400).json({ error: "You must provide a cholesterol level" });
         return;
     }
 
-    if (!userInfo.weight) {
+    if (!xss(userInfo.weight)) {
         res.status(400).json({ error: "You must provide a weight" });
         return;
     }
 
-    if (!userInfo.weightGoal) {
+    if (!xss(userInfo.weightGoal)) {
         res.status(400).json({ error: "You must provide a weight goal" });
         return;
     }
 
-    if (!userInfo.dietoption) {
+    if (!xss(userInfo.dietoption)) {
         res.status(400).json({ error: "You must provide a diet option" });
         return;
     }
@@ -164,14 +165,14 @@ router.get("/snack/:name", (req, res) => {
 
 //generate meals
 router.get("/generateMeals", (req, res) => {
-        var userInfo = xss(req.user);
+        var userInfo = req.user;
 console.log("---username "+JSON.stringify(userInfo));
      breakfastList=[];
      lunchList= [];
      dinnerList = [];
      snackList = [];
-     console.log("username "+userInfo.profile.user_name);
-     userData.getUserByusername(userInfo.profile.user_name).then((user) => {
+     console.log("username "+xss(userInfo.profile.user_name));
+     userData.getUserByusername(xss(userInfo.profile.user_name)).then((user) => {
          if(user.profile.vegetarian==true){
              //veg
              switch(user.profile.dietOption){
@@ -316,22 +317,22 @@ console.log("---username "+JSON.stringify(userInfo));
                                         mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
-                                                        if(bf.type== "vegetarian" && parseInt(bf.fibre)>5){
+                                                        if(bf.type== "vegetarian" && parseInt(bf.Fiber)>5){
                                                               breakfastList.push(bf);
                                                     }
                                                     });
                                                         meal.lunch.forEach(function(lunch) {
-                                                            if(lunch.type== "vegetarian" && parseInt(lunch.fibre)>5){
+                                                            if(lunch.type== "vegetarian" && parseInt(lunch.Fiber)>5){
                                                                   lunchList.push(lunch);
                                                             }
                                                     });
                                                     meal.dinner.forEach(function(dinner) {
-                                                        if(dinner.type== "vegetarian" && parseInt(dinner.fibre)>5){
+                                                        if(dinner.type== "vegetarian" && parseInt(dinner.Fiber)>5){
                                                              dinnerList.push(dinner);
                                                         }
                                                     });
                                                     meal.snack.forEach(function(snack) {
-                                                        if(snack.type== "vegetarian" && parseInt(snack.fibre)>5){
+                                                        if(snack.type== "vegetarian" && parseInt(snack.Fiber)>5){
                                                             snackList.push(snack);
                                                         }
                                                     });                                                   
@@ -350,22 +351,22 @@ console.log("---username "+JSON.stringify(userInfo));
                                          mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
-                                                        if(bf.type== "vegetarian" && parseInt(bf.fibre)<5){
+                                                        if(bf.type== "vegetarian" && parseInt(bf.Fiber)<5){
                                                               breakfastList.push(bf);
                                                     }
                                                     });
                                                         meal.lunch.forEach(function(lunch) {
-                                                            if(lunch.type== "vegetarian" && parseInt(lunch.fibre)<5){
+                                                            if(lunch.type== "vegetarian" && parseInt(lunch.Fiber)<5){
                                                                   lunchList.push(lunch);
                                                             }
                                                     });
                                                     meal.dinner.forEach(function(dinner) {
-                                                        if(dinner.type== "vegetarian" && parseInt(dinner.fibre)<5){
+                                                        if(dinner.type== "vegetarian" && parseInt(dinner.Fiber)<5){
                                                              dinnerList.push(dinner);
                                                         }
                                                     });
                                                     meal.snack.forEach(function(snack) {
-                                                        if(snack.type== "vegetarian" && parseInt(snack.fibre)<5){
+                                                        if(snack.type== "vegetarian" && parseInt(snack.Fiber)<5){
                                                             snackList.push(snack);
                                                         }
                                                     });                                                   
@@ -452,7 +453,8 @@ console.log("---username "+JSON.stringify(userInfo));
          }else{
              //non-vegetarian
              switch(user.profile.dietOption){
-                 case "high protein":  mealData.getAllmeals().then((mealList) => {
+                 case "high protein":   //<15
+                                            mealData.getAllmeals().then((mealList) => {
                                             mealList.forEach(function(meal) {
                                                 meal.breakfast.forEach(function(bf) {
                                                     if(bf.type== "non-vegetarian" && parseInt(bf.Protein)>15){
@@ -486,7 +488,8 @@ console.log("---username "+JSON.stringify(userInfo));
                                     });
                                      break;
 
-                case "low protein":  mealData.getAllmeals().then((mealList) => {
+                case "low protein":  //<15
+                                            mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
                                                         if(bf.type== "non-vegetarian" && parseInt(bf.Protein)<15){
@@ -593,22 +596,22 @@ console.log("---username "+JSON.stringify(userInfo));
                                         mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
-                                                        if(bf.type== "non-vegetarian" && parseInt(bf.fibre)>5){
+                                                        if(bf.type== "non-vegetarian" && parseInt(bf.Fiber)>5){
                                                               breakfastList.push(bf);
                                                     }
                                                     });
                                                         meal.lunch.forEach(function(lunch) {
-                                                            if(lunch.type== "non-vegetarian" && parseInt(lunch.fibre)>5){
+                                                            if(lunch.type== "non-vegetarian" && parseInt(lunch.Fiber)>5){
                                                                   lunchList.push(lunch);
                                                             }
                                                     });
                                                     meal.dinner.forEach(function(dinner) {
-                                                        if(dinner.type== "non-vegetarian" && parseInt(dinner.fibre)>5){
+                                                        if(dinner.type== "non-vegetarian" && parseInt(dinner.Fiber)>5){
                                                              dinnerList.push(dinner);
                                                         }
                                                     });
                                                     meal.snack.forEach(function(snack) {
-                                                        if(snack.type== "non-vegetarian" && parseInt(snack.fibre)>5){
+                                                        if(snack.type== "non-vegetarian" && parseInt(snack.Fiber)>5){
                                                             snackList.push(snack);
                                                         }
                                                     });                                                   
@@ -623,26 +626,26 @@ console.log("---username "+JSON.stringify(userInfo));
                                             res.status(404).json({ error: "meals not found" });
                                         });
                                          break;
-                    case "low fibre" : //<5
+                    case "low fiber" : //<5
                                          mealData.getAllmeals().then((mealList) => {
                                                 mealList.forEach(function(meal) {
                                                     meal.breakfast.forEach(function(bf) {
-                                                        if(bf.type== "non-vegetarian" && parseInt(bf.fibre)<5){
+                                                        if(bf.type== "non-vegetarian" && parseInt(bf.Fiber)<5){
                                                               breakfastList.push(bf);
                                                     }
                                                     });
                                                         meal.lunch.forEach(function(lunch) {
-                                                            if(lunch.type== "non-vegetarian" && parseInt(lunch.fibre)<5){
+                                                            if(lunch.type== "non-vegetarian" && parseInt(lunch.Fiber)<5){
                                                                   lunchList.push(lunch);
                                                             }
                                                     });
                                                     meal.dinner.forEach(function(dinner) {
-                                                        if(dinner.type== "non-vegetarian" && parseInt(dinner.fibre)<5){
+                                                        if(dinner.type== "non-vegetarian" && parseInt(dinner.Fiber)<5){
                                                              dinnerList.push(dinner);
                                                         }
                                                     });
                                                     meal.snack.forEach(function(snack) {
-                                                        if(snack.type== "non-vegetarian" && parseInt(snack.fibre)<5){
+                                                        if(snack.type== "non-vegetarian" && parseInt(snack.Fiber)<5){
                                                             snackList.push(snack);
                                                         }
                                                     });                                                   
@@ -748,7 +751,7 @@ router.get("/meals", (req, res) => {
 
 
 router.post("/addMeals", (req, res) => {
-    let inputData = xss(req.body);
+    let inputData = req.body;
     console.log(inputData);
     inputData._id= uuid.v4();
     console.log(JSON.stringify(inputData));
@@ -762,9 +765,9 @@ router.post("/addMeals", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-    let updatedData = xss(req.body);
+    let updatedData = req.body;
 
-    let getPost = mealData.getRecipieById(req.params.id);
+    let getPost = mealData.getRecipieById(xss(req.params.id));
 
     getPost.then(() => {
         return mealData.updateRecipe(xss(req.params.id), updatedData)

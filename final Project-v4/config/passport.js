@@ -40,11 +40,15 @@ module.exports = function(passport) {
             userCollecion.findOne({"profile.user_name":xss(username)}, function (err, user) {
             if (err) { return done(err); }
             if (!user) {
-                return done(null, false, { message: 'Incorrect username.' });
+                return done(null, false,  req.flash('loginMessage', 'Invalid Username.'));
             }
+            console.log(user);
+            console.log("password and hashpassword "+password +" "+ user.hashedPassword);
+           let compare = bcrypt.compareSync(xss(password), user.hashedPassword);
+         console.log("comaprision "+compare);
 
-           if(!( bcrypt.compareSync(xss(password), user.hashedPassword))){
-                 return done(null, false, { message: 'Incorrect password.' });
+           if(!(compare)){
+                 return done(null, false,req.flash('loginMessage', 'Invalid Password.'));
            }
 
             return done(null, user);

@@ -23,39 +23,39 @@ router.get("/", (req, res) => {//works
 });
 
 router.post("/addUser", (req, res) => {//create a user, works
-    let userInfo = xss(req.body);
+    let userInfo = req.body;
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to create a user" });
         return;
     }
 
-    if (!userInfo.profile.name) {
+    if (!xss(userInfo.profile.name)) {
         res.status(400).json({ error: "You must provide a name" });
         return;
     }
 
-    if (!userInfo.profile.userName) {
+    if (!xss(userInfo.profile.userName)) {
         res.status(400).json({ error: "You must provide a user name" });
         return;
     }
 
-    if (!userInfo.profile.weight) {
+    if (!xss(userInfo.profile.weight)) {
         res.status(400).json({ error: "You must provide a weight" });
         return;
     }
 
-    if (!userInfo.profile.height) {
+    if (!xss(userInfo.profile.height)) {
         res.status(400).json({ error: "You must provide a height" });
         return;
     }
 
-    if (!userInfo.profile.age) {
+    if (!xss(userInfo.profile.age)) {
         res.status(400).json({ error: "You must provide an age" });
         return;
     }
 
-    userData.addUserProfile(userInfo.profile.name, userInfo.profile.userName,userInfo.profile.password, userInfo.profile.weight, userInfo.profile.height, userInfo.profile.age)
+    userData.addUserProfile(xss(userInfo.profile.name), xss(userInfo.profile.userName),xss(userInfo.profile.password), xss(userInfo.profile.weight), xss(userInfo.profile.height), xss(userInfo.profile.age))
         .then((newUser) => {
             res.json(newUser);
         }, () => {
@@ -64,24 +64,24 @@ router.post("/addUser", (req, res) => {//create a user, works
 });
 
 router.put("/:id", (req, res) => {//update a user, works
-    let userInfo = xss(req.body);
+    let userInfo = req.body;
 
     if (!userInfo) {
         res.status(400).json({ error: "You must provide data to update a user" });
         return;
     }
 
-    if (!userInfo.cholesterol) {
+    if (!xss(userInfo.cholesterol)) {
         res.status(400).json({ error: "You must provide a cholesterol level" });
         return;
     }
 
-    if (!userInfo.weight) {
+    if (!xss(userInfo.weight)) {
         res.status(400).json({ error: "You must provide a weight" });
         return;
     }
 
-    if (!userInfo.weightGoal) {
+    if (!xss(userInfo.weightGoal)) {
         res.status(400).json({ error: "You must provide a weight goal" });
         return;
     }
@@ -91,7 +91,7 @@ router.put("/:id", (req, res) => {//update a user, works
         return;
     }
 
-    if (!userInfo.dietOption) {
+    if (!xss(userInfo.dietOption)) {
         res.status(400).json({ error: "You must provide a diet option" });
         return;
     }
