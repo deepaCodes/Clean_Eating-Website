@@ -1,4 +1,5 @@
 <h2>All User Comments</h2>
+<p class="ErrorMessage">{{error}}</p>
 <table class="table" id="user-comments-table">
     <thead>
     <tr>
@@ -17,8 +18,9 @@
     </tr>
     {{/each}}
     </tbody>
+    <input type="hidden" name="comments" value="{{comment}}">
     <input type="submit" value="Delete A Comment">
     </form>
 </table>
-<p>{{error}}</p>
+
  

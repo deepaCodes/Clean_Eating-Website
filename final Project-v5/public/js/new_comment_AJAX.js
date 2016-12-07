@@ -8,7 +8,8 @@
     function resetTable(username,newComment) {
 
             var newHtmlString = "<tr><td>" + username + "</td><td>" + newComment + "</td></tr>"
-            commentsTable.append(newHtmlString);
+            commentsTable.prepend(newHtmlString);
+            myNewCommentForm[0].reset();
     }
     
 
@@ -20,6 +21,7 @@
         var username = userNameInput.val();
         var newComment = newCommentTextArea.val();
         var errorMessageArea = $("#error-message-area");
+        
     
         //error checking for value existence, type, and bounds
         if (username === undefined || username === "") errorMessageArea.html("<p>Error: No username is provided.</p>");
@@ -54,7 +56,7 @@
             //});
         }
         else{
-            errorMessageArea.html("<p>Error: Please enter all fields and the Due Date must be a date value.</p>");
+            errorMessageArea.html("<p>Error: Please enter a comment.</p>");
         }
     });
 })(window.jQuery);
