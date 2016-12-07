@@ -137,6 +137,101 @@
 			    "Calories" : 75,
                 "Fiber": 0.5,
 			    "type" : "vegetarian"
+			},
+			{"meal_name" : "Broccoli, Ham, and Parmesan Cheese Omelet",
+				"ingredients" : [
+                    {
+						"name" : "eggs",
+						"amount" : "2 large"
+					}, 
+                    {
+						"name" : "egg whites",
+						"amount" : "2 large"
+					},
+                    {
+						"name" : "extra-virgin olive oil",
+						"amount" : "1 teaspoon"
+					}, 
+                    {
+						"name" : "broccoli, chopped",
+						"amount" : "0.5 cup"
+					},
+                    {
+						"name" : "red bell pepper, chopped",
+						"amount" : "1 pepper"
+					}, 
+                    {
+						"name" : "shallot, finely chopped",
+						"amount" : "1"
+					},
+                    {
+						"name" : "parmigiano-reggiano cheese, finely grated",
+						"amount" : "0.25 cup"
+					},
+                    {
+						"name" : "spouted grain bread, toasted",
+						"amount" : "1 slice"
+					}, 
+                    {
+						"name" : "ham, chopped",
+						"amount" : "0.5 cup"
+					}
+				],
+				"recipe_instructions" : [
+					"Whisk eggs and egg whites together in a small bowl; place near the stove.",
+                    "Heat oil in a medium nonstick skillet over medium heat.", 
+					"Add broccoli and shallot; cook, stirring frequently, until tender, about 5 minutes. ",
+					"Pour the eggs into the pan, without stirring, and sprinkle cheese and ham on top.", 
+					"Cover the pan and cook until the eggs are set, 3 to 4 minutes. Serve with toast."
+				],
+				"Protein" : 51,
+			    "Fat" : 32,
+			    "Carbs" : 22,
+			    "Calories" : 589,
+                "Fiber": 4,
+			    "type" : "non-vegetarian"
+			},
+			{"meal_name" : "Mini Bacon and Egg Tarts",
+				"ingredients" : [
+                    {
+						"name" : "whole wheat brea, crusts removed",
+						"amount" : "8 slices"
+					}, 
+                    {
+						"name" : "fat free milk",
+						"amount" : "0.5 cup"
+					},
+                    {
+						"name" : "eggs, lightly beaten",
+						"amount" : "4 large"
+					}, 
+                    {
+						"name" : "green onions, chopped",
+						"amount" : "2 Tbsp"
+					},
+                    {
+						"name" : "smoked bacon, chopped and crumbled",
+						"amount" : "2 slices"
+					}, 
+                    {
+						"name" : "sharp cheddar cheese, shredded",
+						"amount" : "0.5 cup"
+					}
+				],
+				"recipe_instructions" : [
+					"Preheat oven to 425 degrees F. Lightly coat both sides of bread with cooking spray. ",
+					"Press each bread slice into the cup of a muffin tin. Bake at 425 for 10 minutes or until bread is lightly toasted. Cool slightly.",
+					"Reduce oven temperature to 350 degrees F.Combine milk and eggs, stirring well with a whisk. ",
+					"Divide the egg mixture evenly among bread cups. ",
+					"Sprinkle onions, if desired, and bacon evenly over tarts; top each with 1 tablespoon cheese.",
+					"Bake at 350 for 15 minutes or until set. Enjoy!"
+				],
+				"Protein" : 9,
+			    "Fat" : 4,
+			    "Carbs" : 15,
+			    "Calories" : 158,
+                "Fiber": 6,
+			    "type" : "non-vegetarian"
 			}
 		],
 		"lunch" : [{
@@ -365,6 +460,83 @@
 				"Calories" : 300.0,
                 "Fiber": 5.7,
 				"type" : "vegetarian"
+			},
+			{
+				"meal_name" : "Slow Cooker Chicken Fajita and Quinoa Soup",
+				"ingredients" : [
+                    {
+						"name" : "skinless chicken breast",
+						"amount" : "1.5 lbs"
+					}, 
+                    {
+						"name" : "uncooked quinoa, rinsed",
+						"amount" : "1 cup"
+					},
+                    {
+						"name" : "bell peppers, chopped",
+						"amount" : "3"
+					}, 
+                    {
+						"name" : "onion, chopped",
+						"amount" : "1 medium"
+					},
+                    {
+						"name" : "garlic, minced",
+						"amount" : "3 cloves"
+					}, 
+                    {
+						"name" : "low sodium chicken broth",
+						"amount" : "4 cups"
+					},
+                    {
+						"name" : "lime juice",
+						"amount" : "1 lime"
+					}, 
+                    {
+						"name" : "diced tomatoes",
+						"amount" : "1 can"
+					},
+					{
+						"name" : "green chiles",
+						"amount" : "1 can"
+					},
+					{
+						"name" : "black beans, drained and rinsed",
+						"amount" : "1 can"
+					}, 
+                    {
+						"name" : "frozen corn",
+						"amount" : "1 cup"
+					},
+                    {
+						"name" : "chili powder",
+						"amount" : "1.5 Tbsp"
+					}, 
+                    {
+						"name" : "cumin",
+						"amount" : "1 Tbsp"
+					},
+					{
+						"name" : "paprika",
+						"amount" : "2 tsp"
+					},
+					{
+						"name" : "sea salt",
+						"amount" : "2 tsp"
+					}
+				],
+				"recipe_instructions" : [
+					"In a 6-quart slow cooker, add chicken and the rest of ingredients, cover and place on high for 3 to 4 hours or low 6 to 8 hours.",
+					"Remove chicken and shred with two forks then add back into the slow cooker. Season with additional salt and seasonings if needed.",
+					"Spoon soup into bowls and top with favorite toppings, enjoy!",
+					"Serving Size: 2 cups"
+   				],
+				"Protein" : 40,
+				"Fat" : 4,
+				"Carbs" : 67,
+				"Calories" : 472,
+                "Fiber": 14.6,
+				"type" : "non-vegetarian"
 			}
 		],
 		"dinner" : [
@@ -563,6 +735,136 @@
 				"Calories" : 182.0,
                 "Fiber": 0.0,
 				"type" : "vegetarian"
+			},
+			{
+				"meal_name" : "Lemon and Herb Spaghetti Squash with Roasted Shrimp",
+				"ingredients" : [
+                    {
+						"name" : "spaghetti squash",
+						"amount" : "2 small or medium"
+					}, 
+                    {
+						"name" : "shrimp, peelded and deveined",
+						"amount" : "12 oz large"
+					},
+                    {
+						"name" : "olive oil",
+						"amount" : "1 Tbsp"
+					}, 
+                    {
+						"name" : "butter",
+						"amount" : "2 Tbsp"
+					},
+                    {
+						"name" : "salt and pepper",
+						"amount" : "to taste"
+					}, 
+                    {
+						"name" : "garlic, minced",
+						"amount" : "3 cloves"
+					},
+                    {
+						"name" : "lemon juice",
+						"amount" : "2 lemons"
+					},
+					
+                    {
+						"name" : "lemon zest",
+						"amount" : "1 tsp"
+					},
+					{
+						"name" : "dry white wine",
+						"amount" : "1.5 cups"
+					},
+                    {
+						"name" : "dijon mustard",
+						"amount" : "1 tsp"
+					}, 
+                    {
+						"name" : "red pepper flakes",
+						"amount" : "0.25 tsp"
+					},
+                    {
+						"name" : "plain greek yogurt",
+						"amount" : "0.25 cup"
+					},
+					
+                    {
+						"name" : "fresh parsley, chopped",
+						"amount" : "2 Tbsp"
+					}
+				],
+				"recipe_instructions" : [
+					"To make the spaghetti squash, preheat oven to 350 degrees F and cut squash right down the middle. Scoop out all the seeds and place cut side down on a baking sheet lightly sprayed with oil so they don't stick. Bake the squash in the oven for 45 minutes until tender.",
+					"Meanwhile in a large skillet, melt oil and butter over medium high heat, add shrimp and season with salt and pepper, sauteing for about 2 minutes. Add garlic and saute an additional 2 minutes until shrimp is cooked through; remove from heat and set aside (you don't want to overcook the shrimp)",
+					"Add lemon juice, lemon zest, white wine, Dijon mustard and red pepper flakes and bring to a boil. Reduce heat and allow sauce to simmer until the spaghetti squash has finished baking.",
+					"Remove the skillet from heat and take squash out of the oven. Scrape out all the strands of spaghetti using a fork, throw spaghetti squash into a colander and place in the sink, pressing gently with a paper towel to allow any excess water to drain out.",
+					"Whisk yogurt in with the sauce until creamy and smooth then stir in chopped parsley. Toss with spaghetti squash and shrimp, serve and enjoy!",
+					"Serving size: 2 cups spaghetti squash and 5 shrimp"
+   				],
+				"Protein" : 9.7,
+				"Fat" : 10.5,
+				"Carbs" : 25.7,
+				"Calories" : 235,
+                "Fiber": 6.3,
+				"type" : "non-vegetarian"
+			},
+			{
+				"meal_name" : "Maple Balsamic & Herb Chicken",
+				"ingredients" : [
+                    {
+						"name" : "balsamic vinegar",
+						"amount" : "0.25 cup"
+					}, 
+                    {
+						"name" : "pure maple syrup",
+						"amount" : "2 Tbsp"
+					},
+                    {
+						"name" : "dijon mustard",
+						"amount" : "1 Tbsp"
+					}, 
+                    {
+						"name" : "garlic, minced",
+						"amount" : "2 cloves"
+					},
+                    {
+						"name" : "salt and pepper",
+						"amount" : "to taste"
+					}, 
+                    {
+						"name" : "fresh thyme",
+						"amount" : "0.5 tsp"
+					},
+                    {
+						"name" : "cayenne",
+						"amount" : "0.125 tsp"
+					},
+					
+                    {
+						"name" : "boneless skinless chicken breast",
+						"amount" : "4 pieces"
+					},
+					{
+						"name" : "olive oil",
+						"amount" : "2 Tbsp"
+					}
+				],
+				"recipe_instructions" : [
+					"In small bowl, whisk together balsamic vinegar, maple syrup, mustard, garlic, thyme, cayenne and salt and pepper. Pour sauce into a large plastic baggy and add chicken breasts. ",
+					"(I like to pound out the chicken breasts to ensure they each have the same thickness so they cook evenly) Marinate the chicken for at least 30 minutes or even overnight.",
+					"Heat olive oil in a large skillet over medium-high heat until oil shimmers, about 3 to 4 minutes. Using tongs, remove chicken breasts from baggy (leaving the marinade inside) and arrange in the pan. ",
+					"Allow chicken to cook for about 7 to 8 minutes, without moving, so a nice golden-brown crust forms. Flip chicken over and cook the other side for another 7 to 8 minutes. ",
+					"You'll know the chicken is done when the juices run clear and the inside temp has reached 160 to 165 degrees.Remove chicken and place on a cutting board to rest then pour the remaining marinade into the heated skillet. ",
+					"Scrape up any brown bits and allow marinade to bubble up and cook, stirring occasionally.Add chicken back into the skillet, coating well. Serve and enjoy!",
+					"Serving size: 2 chicken breasts"
+   				],
+				"Protein" : 53.8,
+				"Fat" : 20,
+				"Carbs" : 19.6,
+				"Calories" : 501,
+                "Fiber": 0,
+				"type" : "non-vegetarian"
 			}
         ],
         "snack" : [{
@@ -677,5 +979,88 @@
 			"Calories" :92,
             "Fiber": 3.6,
 			"type" : "vegetarian"
-		}]
+		},
+		{
+            "meal_name": "Skinny Buffalo Chicken Bites",
+            "ingredients": [
+    				{
+      					"name": "shredded cooken chicken",
+      					"amount": "3 cups"
+    				},
+                    {
+      					"name": "hot sauce",
+      					"amount": "0.3 cup"
+    				},
+					{
+      					"name": "fat-free cream cheese, softened",
+      					"amount": "3.5 oz"
+    				},
+                    {
+      					"name": "shredded cheddar cheese",
+      					"amount": "1 cup"
+    				},
+					{
+      					"name": "green onion, chopped",
+      					"amount": "0.25 cup"
+    				},
+                    {
+      					"name": "all purpose flour",
+      					"amount": "0.5 cup"
+    				},
+					{
+      					"name": "eggs, lightly beaten",
+      					"amount": "2"
+    				},
+                    {
+      					"name": "corn flakes cereal, crushed",
+      					"amount": "3 cups"
+    				}
+                ],
+            "recipe_instructions" : [
+					"Preheat oven to 350 degrees F. In a large bowl, combine shredded chicken, hot sauce and cream cheese; mix well. ",
+					"Stir in cheddar cheese and green onions and set aside. Using 3 separate bowls, set out the flour, eggs and crushed cereal. ",
+					"Scoop out chicken mixture and make 1½-inch balls, first rolling in flour, then dipping in egg and last coating with cereal. ",
+					"Repeat this until you have about 30 balls. Place balls on sheet and bake for 20 to 25 minutes, until golden.",
+					"Serve with blue cheese or ranch dressing and enjoy!",
+					"Serving size: 3 balls"
+				],
+            "Protein" : 11.9,
+			"Fat" : 4,
+			"Carbs" : 9.3,
+			"Calories" :126,
+            "Fiber": 0.3,
+			"type" : "non-vegetarian"
+		},
+		{
+            "meal_name": "Snack Tray",
+            "ingredients": [
+    				{
+      					"name": "rye crackers",
+      					"amount": "15 crackers"
+    				},
+                    {
+      					"name": "peanut butter",
+      					"amount": "2 Tbsp"
+    				},
+					
+                    {
+      					"name": "deli turkey slices",
+      					"amount": "4 oz"
+    				},
+					{
+      					"name": "avocado",
+      					"amount": "1"
+    				}
+                ],
+            "recipe_instructions" : [
+					"Eat and Enjoy!"
+				],
+            "Protein" : 21.9,
+			"Fat" : 42,
+			"Carbs" : 22,
+			"Calories" :694,
+            "Fiber": 12,
+			"type" : "non-vegetarian"
+		}
+		]
 	}]

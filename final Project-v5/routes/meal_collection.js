@@ -3,6 +3,7 @@ const router = express.Router();
 const data = require("../data");
 const mealData = data.meal_collection;
 const userData = data.user_collection;
+const commentData = data.comments;
 var passport = require('passport');
 const bcrypt = require("bcrypt-nodejs");
 const xss = require('xss');
@@ -67,43 +68,73 @@ router.post("/signup", (req, res) => {
       let weight = xss(req.body.weight);
       let height =xss(req.body.height);
       let age = xss(req.body.age);
-      let vegetarian = xss(req.body.vegetarian);
-      let dietoption= xss(req.body.dietoption);
-    userData.addUserProfile(name,username,hashpassword,weight,height,age,vegetarian,dietoption)
+      
+      if (!name && !username && !req.body.password && !weight && !height && !age) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide data to create a user"  });
+        return;
+    }
+
+    if (!name) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide a name"  });
+        return;
+    }
+
+    if (!username) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide a user name"  });
+        return;
+    }
+
+    if (!req.body.password) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide a password"  });
+        return;
+    }
+
+    if (!weight) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide a weight"  });
+        return;
+    }
+    if (isNaN(weight)) {
+        res.render('websiteLayout/signup',{ errorMessage: "Your weight must be a number"  });
+        return;
+    }
+
+    if (!height) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide a height"  });
+        return;
+    }
+    if (isNaN(height)) {
+        res.render('websiteLayout/signup',{ errorMessage: "Your height must be a number"  });
+        return;
+    }
+
+    if (!age) {
+        res.render('websiteLayout/signup',{ errorMessage: "You must provide an age"  });
+        return;
+    }
+    if (isNaN(age)) {
+        res.render('websiteLayout/signup',{ errorMessage: "Your age must be a number"  });
+        return;
+    }
+
+    userData.addUserProfile(name,username,hashpassword,weight,height,age)
         .then((newUser) => {
 
                 res.redirect('/meal_collection/login');
-        }, () => {
-            res.sendStatus(500);
-         });
+        }).catch((error) => {
+        res.render('websiteLayout/signup',{ errorMessage: error  });
+    });
 });
 
 //edit profile post
 router.post("/editProfile", (req, res) => {
     let userInfo = req.body;
 
-    if (!userInfo) {
-        res.status(400).json({ error: "You must provide data to update a user" });
+     if (!xss(userInfo.vegetarian)) {
+        res.render("websiteLayout/editProfile",{ errorMessage: "You must provide your vegetarian status" });
         return;
     }
-
-    if (!xss(userInfo.cholesterol)) {
-        res.status(400).json({ error: "You must provide a cholesterol level" });
-        return;
-    }
-
-    if (!xss(userInfo.weight)) {
-        res.status(400).json({ error: "You must provide a weight" });
-        return;
-    }
-
-    if (!xss(userInfo.weightGoal)) {
-        res.status(400).json({ error: "You must provide a weight goal" });
-        return;
-    }
-
     if (!xss(userInfo.dietoption)) {
-        res.status(400).json({ error: "You must provide a diet option" });
+        res.render("websiteLayout/editProfile",{ errorMessage: "You must provide a diet option" });
         return;
     }
         return userData.getUserById(req.user._id).then((getUser) => {
@@ -113,8 +144,8 @@ router.post("/editProfile", (req, res) => {
             }, () => {
                 res.sendStatus(500);
             });
-    }).catch(() => {
-        res.status(404).json({ error: "User not found" });
+    }).catch((error) => {
+        res.render("websiteLayout/editProfile",{ errorMessage: error });
     });
 });
 
@@ -171,9 +202,10 @@ console.log("---username "+JSON.stringify(userInfo));
      lunchList= [];
      dinnerList = [];
      snackList = [];
-     console.log("username "+xss(userInfo.profile.user_name));
+     console.log("username "+xss(userInfo.profile.user_name)); 
      userData.getUserByusername(xss(userInfo.profile.user_name)).then((user) => {
-         if(user.profile.vegetarian==true){
+         commentData.getRecentUserComments(xss(userInfo.profile.user_name)).then((allComments) => {
+         if(user.profile.vegetarian==="true"){
              //veg
              switch(user.profile.dietOption){
                  case "high protein":  mealData.getAllmeals().then((mealList) => {
@@ -203,7 +235,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                             console.log("lunch : "+JSON.stringify(lunchList));
                                             console.log("dinner : "+JSON.stringify(dinnerList));
                                             console.log("snack : "+JSON.stringify(snackList));
-                                    res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                    res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
                                     }).catch((e) => {
                                         res.status(404).json({ error: "meals not found" });
                                     });
@@ -236,7 +268,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
 
                                         }).catch((e) => {
@@ -272,7 +304,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                                res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                                res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -307,7 +339,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                                res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                                res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -341,7 +373,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                                res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                                res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -375,7 +407,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                              res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                              res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -409,7 +441,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -443,7 +475,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -481,7 +513,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                             console.log("lunch : "+JSON.stringify(lunchList));
                                             console.log("dinner : "+JSON.stringify(dinnerList));
                                             console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                     }).catch((e) => {
                                         res.status(404).json({ error: "meals not found" });
@@ -516,7 +548,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -551,7 +583,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -586,7 +618,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -620,7 +652,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -654,7 +686,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -688,7 +720,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -722,7 +754,7 @@ console.log("---username "+JSON.stringify(userInfo));
                                                 console.log("lunch : "+JSON.stringify(lunchList));
                                                 console.log("dinner : "+JSON.stringify(dinnerList));
                                                 console.log("snack : "+JSON.stringify(snackList));
-                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user});
+                                             res.render("websiteLayout/meal-user",{breakfast:breakfastList, lunch:lunchList,dinner:dinnerList,snack:snackList,user:user, comment: allComments});
 
                                         }).catch((e) => {
                                             res.status(404).json({ error: "meals not found" });
@@ -732,6 +764,9 @@ console.log("---username "+JSON.stringify(userInfo));
 
          }
         }).catch(() => {
+        response.render("websiteLayout/userProfile",{ user: user, error: "Comments Not Found"});
+    });
+    }).catch(() => {
         response.render("websiteLayout/userProfile",{ error: "User Not Found"});
     });
        

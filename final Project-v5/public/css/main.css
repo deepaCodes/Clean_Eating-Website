@@ -1,3 +1,14 @@
+/*
+css created by Janina
+*/
+.ErrorMessage {
+    color: #ff0000;
+    font-weight: bold;
+}
+/*
+existing css, not sure if it is being used
+*/
+/*
 body {
     background: #FEFEFE;
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -48,4 +59,4 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-
+*/

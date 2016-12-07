@@ -25,8 +25,19 @@ let exportedMethods = {
             });
         });
     },
-    addUserProfile(name, userName,password, weight, height, age,vegetarian,mealoption) {//works
-        console.log("veg and diet option "+vegetarian +" "+mealoption);
+    addUserProfile(name, userName,password, weight, height, age) {//works
+        if(typeof name !== "string") 
+            return Promise.reject("The name must be a string value");
+            if(typeof userName !== "string") 
+            return Promise.reject("The user name must be a string value");
+            if(typeof password !== "string") 
+            return Promise.reject("The password must be a string value");
+            if(typeof weight !== "string") 
+            return Promise.reject("The weight  must be a string value");
+            if(typeof height !== "string") 
+            return Promise.reject("The height must be a string value");
+            if(typeof age !== "string") 
+            return Promise.reject("The age must be a string value");
         return users().then((userCollection) => {
             let newUser = {
                 _id: uuid.v4(), 
@@ -39,8 +50,8 @@ let exportedMethods = {
                     age: age,
                     cholesterol: null,
                     weightGoal: null,
-                    vegetarian: vegetarian,
-                    dietOption: mealoption
+                    vegetarian: null,
+                    dietOption: null
 
                 }
             };

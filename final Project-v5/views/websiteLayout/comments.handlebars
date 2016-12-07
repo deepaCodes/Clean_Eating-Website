@@ -1,7 +1,7 @@
 <h2>Comments</h2>
 <div class="col-sm-12 col-md-4">
     <form id="new-comment-form">
-        <label>User Name<input id="new-comment-username" type="text" placeholder="Add in User Name"/></label>
+        <label>User Name<input id="new-comment-username" type="text" value="{{username}}" readonly/></label>
         <label>New Comment<textarea rows="4" cols="50" id="new-comment-body"></textarea></label>
         <input type="submit" value="ADD NEW COMMENT" />
     </form>
@@ -25,3 +25,4 @@
     {{/each}}
     </tbody>
 </table>
+<p class="ErrorMessage">{{error}}</p>

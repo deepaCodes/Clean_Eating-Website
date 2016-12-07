@@ -16,7 +16,24 @@
             <tr><td>Diet option: {{user.profile.dietOption}}</td> </tr>        
          </tbody>
     </table>
-    
+  <h3 style="font-size: 3rem;color: #E29013;">USER'S RECENT COMMENTS</h3> 
+  <table class="table" id="recent-comments-table">
+    <thead>
+    <tr>
+        <th>UserName</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{#each comment}}
+    <tr>
+        <td>{{this.username}}</td>
+        <td>{{this.comment}}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
+
   <h3 style="font-size: 3rem;color: #E29013;">MEAL GENERATED</h3>
   <h3 style="font-size: 3rem;color: #E29013;">Breakfast List</h3>
 

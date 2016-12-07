@@ -6,24 +6,31 @@ let exportedMethods = {
 
     getAllComments() {
         return comments().then((commentsCollection) => {
-            return commentsCollection.find({}).toArray();
+            return commentsCollection.find({}).sort({timestamp: -1}).toArray();
         });
 
     },
 
 getUserComments(username) {
         return comments().then((commentsCollection) => {
-            return commentsCollection.find({username:username}).toArray();
+            return commentsCollection.find({username:username}).sort({timestamp: -1}).toArray();
         });
 
     },
 
+getRecentUserComments(username) {
+        return comments().then((commentsCollection) => {
+            return commentsCollection.find({username:username}).sort({timestamp: -1}).limit(5).toArray();
+        });
+
+    },
     addComment(username,comment) {//keep
         return comments().then((commentsCollection) => {
             let newComment = {
                 _id: uuid.v4(), 
                 username: username, 
-                comment: comment
+                comment: comment,
+                timestamp: new Date()
                 }
 
             return commentsCollection.insertOne(newComment).then((newlyCreatedComment) => {
