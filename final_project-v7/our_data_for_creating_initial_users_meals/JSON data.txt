@@ -1,0 +1,71 @@
+[{
+		"_id" : "b7f826ba-5589-4266-85d9-a43fe14de6c0",
+		"breakfast" : [{
+				"meal_name" : "Carrot cake protien Oatmeal",
+				"ingredients" : [{
+						"name" : "Carrot",
+						"amount" : "1"
+					}, {
+						"name" : "oatmeal",
+						"amount" : "20 gms"
+					}, {
+						"name" : "sugar",
+						"amount" : "6 gms"
+					}
+				],
+				"recipe_instructions" : [
+					"Cook Oatmeal with water or milk",
+					"Add cut carrots",
+					"Add sugar and mix well"
+				],
+				"Protein" : 23,
+				"Fat" : 20,
+				"fibre" : 6,
+				"Calories" : 265,
+				"type" : "vegetarian"
+			}, {
+				"meal_name" : "Egg and Toast",
+				"ingredients" : [{
+						"name" : "Egg",
+						"amount" : "2"
+					}, {
+						"name" : "bread",
+						"amount" : "1 slice"
+					}
+				],
+				"recipe_instructions" : [
+					"Fry eggs",
+					"toast bread",
+					"Place eggs on top of toast"
+				],
+				"Protein" : 26,
+				"Fat" : 26,
+				"fibre": 6,
+				"Calories" : 100,
+				"type" : "vegetarian"
+			}
+		],
+		"lunch" : [{
+				"meal_name" : "lunch egg",
+				"ingredients" : [{
+						"name" : "toast",
+						"amount" : "1 egg"
+					}, {
+						"name" : "bread",
+						"amount" : "2 slices"
+					}
+				],
+				"recipe_instructions" : [
+					"First step",
+					"Second step",
+					"Third step"
+				],
+				"Protein" : 30,
+				"Fat" : 2,
+				"Carbs" : 20,
+				"Calories" : 100,
+				"type" : "vegetarian"
+			}
+		],
+		"dinner" : []
+	}

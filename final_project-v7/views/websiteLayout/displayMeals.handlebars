@@ -1,0 +1,23 @@
+
+  <div  class="container">
+
+    <h3 class="headingStyle2">Meal details</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+         
+            <tr><td><b>Meal Name: </b><br>{{meal.meal_name}} </td> </tr> 
+            <tr><td><b>Ingredients:</b><br>
+                {{#each meal.ingredients}}
+                {{this.name}}<br> {{this.amount}}
+                {{/each}}
+            
+             </td> </tr>     
+            <tr><td><b>Recipe Instructions:</b><br>{{meal.recipe_instructions}}</td> </tr>     
+                
+         </tbody>
+    </table>
+
+    </div>
+    
+  

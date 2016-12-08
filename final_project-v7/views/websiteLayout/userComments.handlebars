@@ -1,0 +1,30 @@
+ <div>
+ <h2 class="headingStyle1">All User Comments</h2>
+<p class="ErrorMessage">{{error}}</p>
+<form id="user-comment-form" action="/comments/deleteComment" method="post">
+
+<table class="table" id="user-comments-table">
+    <thead>
+    <tr>
+        <th>Comment ID</th>
+        <th>UserName</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{#each comment}}
+    <tr>
+        <td><label for="{{this._id}}"></label><input type="radio" name="deleteRadio" value="{{this._id}}" id="{{this._id}}"> {{this._id}}</td>
+        <td>{{this.username}}</td>
+        <td>{{this.comment}}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+    
+</table>
+<input type="hidden" name="comments" value="{{comment}}">
+    <input type="submit" value="Delete A Comment">
+    
+</form>
+</div>
+ 

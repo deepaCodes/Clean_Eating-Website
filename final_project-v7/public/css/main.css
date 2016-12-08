@@ -1,0 +1,60 @@
+
+.ErrorMessage {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+ul {
+       background: #f8f8f8;
+
+}
+.headingStyle1{
+    font-size: 3rem;
+    color: #AB650A;
+}
+.headingStyle2{
+    font-size: 3rem;
+    color: #E29013;
+}
+.headingStyle3{
+    font-size: 4rem;
+    color:#b35900;
+}
+
+.loginBtn{
+    background-color:#000000;
+    color: #ffffff;
+    
+}
+
+.signUpBtn{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+body {
+   background-image: url('/public/images/here.jpg')
+}
+h1{
+     margin-bottom: 5px;
+      font-size: 20pt;
+}
+
+@media print{
+    
+    body {
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.3;
+        color: #000000;
+    }
+
+    h1{
+        font-size: 24pt;
+    }
+    h2{
+        font-size: 20pt;
+    }
+    h3{
+        font-size: 16pt;
+    }
+}

@@ -1,0 +1,37 @@
+//for updating users
+//jdoe
+{
+    "cholesterol": 300,
+    "weight": 150,
+    "weightGoal": 130,
+    "vegetarian": true,
+    "dietOption": "high protein"
+}
+
+//sthompson
+{
+    "cholesterol": 250,
+    "weight": 150,
+    "weightGoal": 125,
+    "vegetarian": false,
+    "dietOption": "low fat"
+}
+
+//dbruister
+{
+    "cholesterol": 300,
+    "weight": 250,
+    "weightGoal": 180,
+    "vegetarian": true,
+    "dietOption": "low carb"
+}
+
+//jcharming
+{
+    "cholesterol": 300,
+    "weight": 180,
+    "weightGoal": 150,
+    "vegetarian": true,
+    "dietOption": "low calorie"
+}
+
