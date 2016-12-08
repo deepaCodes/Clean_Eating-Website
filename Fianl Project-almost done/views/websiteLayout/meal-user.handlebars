@@ -1,0 +1,105 @@
+ <div  class="container">
+ <h3 style="font-size: 4rem;color:#b35900;">User Profile Page</h3>
+
+
+ 
+
+    <h3 style="font-size: 3rem;color: #AB650A;">User Information</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+         
+            <tr><td><b>Name:</b>{{user.profile.name}}  </td> </tr> 
+            <tr><td><b>Username: </b>{{user.profile.user_name}}  </td> </tr>     
+            <tr><td><b>Weight: </b>{{user.profile.weight}}lbs </td> </tr>     
+            <tr><td><b>Height: </b>{{user.profile.height}}  </td> </tr>     
+            <tr><td><b>Age:</b> {{user.profile.age}} </td> </tr>     
+            <tr><td><b>Vegetarian?:</b> {{user.profile.vegetarian}} </td> </tr>     
+            <tr><td><b>Diet option: </b> {{user.profile.dietOption}}</td> </tr>        
+         </tbody>
+    </table>
+  <h3 style="font-size: 3rem;color: #AB650A;">USER'S RECENT COMMENTS</h3> 
+  <table class="table" id="recent-comments-table">
+    <thead>
+    <tr>
+        <th>UserName</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{#each comment}}
+    <tr>
+        <td>{{this.username}}</td>
+        <td>{{this.comment}}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
+
+  <h3 style="font-size: 3rem;color: #AB650A;">MEAL GENERATED</h3>
+  <h3 style="font-size: 3rem;color:#AB650A;">Breakfast List</h3>
+
+<table class="table table-hover table-bordered">
+        <tbody>
+          {{#each breakfast}}
+            <tr>
+              <td><a href="/meal_collection/breakfast/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                    
+        </tbody>
+    </table>
+
+    <h3 style="font-size: 3rem;color: #AB650A;">Lunch List</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+          {{#each lunch}}
+            <tr>
+              <td><a href="/meal_collection/lunch/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                   
+        </tbody>
+    </table>
+
+ <h3 style="font-size: 3rem;color: #AB650A;">Dinner List</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+          {{#each dinner}}
+            <tr>
+              <td><a href="/meal_collection/dinner/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                     
+        </tbody>
+    </table>
+
+     <h3 style="font-size: 3rem;color:#AB650A;">Snacks List</h3>
+
+<table class="table table-hover table-bordered ">
+        <tbody>
+          {{#each snack}}
+            <tr>
+              <td><a href="/meal_collection/snack/{{this.meal_name}}">{{this.meal_name}}</a></td>
+            </tr>
+           {{/each}}
+                    
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
