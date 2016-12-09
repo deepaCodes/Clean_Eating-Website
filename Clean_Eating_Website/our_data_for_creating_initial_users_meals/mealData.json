@@ -1,0 +1,1380 @@
+[
+  {
+    "_id": "87eff763-ceb1-44d2-ad25-f839d2bcbe7e",
+    "breakfast": [
+      {
+        "meal_name": "Carrot_cake_protien_Oatmeal",
+        "ingredients": [
+          {
+            "name": "Carrot",
+            "amount": "1"
+          },
+          {
+            "name": "oatmeal",
+            "amount": "20 gms"
+          },
+          {
+            "name": "sugar",
+            "amount": "6 gms"
+          }
+        ],
+        "recipe_instructions": [
+          "Cook Oatmeal with water or milk",
+          "Add cut carrots",
+          "Add sugar and mix well"
+        ],
+        "Protein": 23,
+        "Fat": 20,
+        "fibre": 6,
+        "Calories": 265,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Muesli",
+        "ingredients": [
+          {
+            "name": "Rolled Oats",
+            "amount": "4 cups"
+          },
+          {
+            "name": "Wheat germ",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "Wheat barn",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "raisins",
+            "amount": "1/4 cup"
+          }
+        ],
+        "recipe_instructions": [
+          "In a large mixing bowl combine oats, wheat germ, wheat bran, oat bran, dried fruit, nuts, sugar, and seeds.",
+          "Mix well. Store muesli in an airtight container. It keeps for 2 months at room temperature."
+        ],
+        "Protein": 16,
+        "Fat": 4,
+        "fibre": 10,
+        "Calories": 265,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Belgian_Waffle_with_Banana",
+        "ingredients": [
+          {
+            "name": "Waffle mix",
+            "amount": "20 oz"
+          },
+          {
+            "name": "Banana",
+            "amount": "1 count"
+          },
+          {
+            "name": "Maple Syrup",
+            "amount": "4 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Prepare the waffle batter as instructed on package",
+          "Add waffle mixture to the hot waffle iron and wait until done",
+          "Add banana and maple syrup on top of Waffle and enjoy"
+        ],
+        "Protein": 10,
+        "Fat": 20,
+        "fibre": 2,
+        "Calories": 600,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Egg_and_Toast",
+        "ingredients": [
+          {
+            "name": "Egg",
+            "amount": "2"
+          },
+          {
+            "name": "bread",
+            "amount": "1 slice"
+          }
+        ],
+        "recipe_instructions": [
+          "Fry eggs",
+          "toast bread",
+          "Place eggs on top of toast"
+        ],
+        "Protein": 26,
+        "Fat": 26,
+        "fibre": 6,
+        "Calories": 100,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Green_Smoothie",
+        "ingredients": [
+          {
+            "name": "water",
+            "amount": "1 cup"
+          },
+          {
+            "name": "chopped kale",
+            "amount": "1 cup"
+          },
+          {
+            "name": "whey vanilla protein powder",
+            "amount": "1 scoop"
+          },
+          {
+            "name": "fresh ginger",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "granny smith apple",
+            "amount": "0.5 medium apple"
+          },
+          {
+            "name": "frozen berries",
+            "amount": "1 cup"
+          }
+        ],
+        "recipe_instructions": [
+          "Combine the water and kale in a blender and blend until kale is in tiny pieces.",
+          "Add in the rest of the ingredients and blend until smooth and foamy.",
+          "Pour into a cup and enjoy! Makes 2 servings."
+        ],
+        "Protein": 10,
+        "Fat": 1.25,
+        "Carbs": 18,
+        "Calories": 122,
+        "Fiber": 5.4,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Veggie_Egg_Muffins",
+        "ingredients": [
+          {
+            "name": "olive oil",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "yellow onion, chopped",
+            "amount": "0.5 onion"
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": "2 cloves"
+          },
+          {
+            "name": "zucchini, shredded",
+            "amount": "0.5 zucchini"
+          },
+          {
+            "name": "red bell pepper, chopped",
+            "amount": "1 pepper"
+          },
+          {
+            "name": "large eggs",
+            "amount": "8 eggs"
+          },
+          {
+            "name": "argula, roughly chopped",
+            "amount": "2 cups"
+          },
+          {
+            "name": "shredded Parmesan cheese",
+            "amount": "0.5 cups"
+          },
+          {
+            "name": "salt and pepper",
+            "amount": "to taste"
+          }
+        ],
+        "recipe_instructions": [
+          "Preheat oven to 375 degrees F. Coat a muffin tin with spray and set aside.",
+          "In a large skillet on medium heat, drizzle olive oil and saute onion and garlic for about 4 minutes until tender and fragrant.",
+          "Add in zucchini and red bell pepper, cooking an additional 2 minutes. Fill each muffin tin about ⅔ full with veggie mixture.",
+          "In a large bowl, whisk together eggs, arugula, cheese and salt/pepper and fill each muffin tin evenly, being careful not to over-fill.",
+          "Bake muffins for about 20 minutes, until they've risen and are slightly browned. Enjoy!",
+          "Serving size: 1 muffin"
+        ],
+        "Protein": 5.1,
+        "Fat": 4.9,
+        "Carbs": 2.5,
+        "Calories": 75,
+        "Fiber": 0.5,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Broccoli_Ham_and_Parmesan_Cheese_Omelet",
+        "ingredients": [
+          {
+            "name": "eggs",
+            "amount": "2 large"
+          },
+          {
+            "name": "egg whites",
+            "amount": "2 large"
+          },
+          {
+            "name": "extra-virgin olive oil",
+            "amount": "1 teaspoon"
+          },
+          {
+            "name": "broccoli, chopped",
+            "amount": "0.5 cup"
+          },
+          {
+            "name": "red bell pepper, chopped",
+            "amount": "1 pepper"
+          },
+          {
+            "name": "shallot, finely chopped",
+            "amount": "1"
+          },
+          {
+            "name": "parmigiano-reggiano cheese, finely grated",
+            "amount": "0.25 cup"
+          },
+          {
+            "name": "spouted grain bread, toasted",
+            "amount": "1 slice"
+          },
+          {
+            "name": "ham, chopped",
+            "amount": "0.5 cup"
+          }
+        ],
+        "recipe_instructions": [
+          "Whisk eggs and egg whites together in a small bowl; place near the stove.",
+          "Heat oil in a medium nonstick skillet over medium heat.",
+          "Add broccoli and shallot; cook, stirring frequently, until tender, about 5 minutes. ",
+          "Pour the eggs into the pan, without stirring, and sprinkle cheese and ham on top.",
+          "Cover the pan and cook until the eggs are set, 3 to 4 minutes. Serve with toast."
+        ],
+        "Protein": 51,
+        "Fat": 32,
+        "Carbs": 22,
+        "Calories": 589,
+        "Fiber": 4,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Mini_Bacon_and_ Egg_Tarts",
+        "ingredients": [
+          {
+            "name": "whole wheat brea, crusts removed",
+            "amount": "8 slices"
+          },
+          {
+            "name": "fat free milk",
+            "amount": "0.5 cup"
+          },
+          {
+            "name": "eggs, lightly beaten",
+            "amount": "4 large"
+          },
+          {
+            "name": "green onions, chopped",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "smoked bacon, chopped and crumbled",
+            "amount": "2 slices"
+          },
+          {
+            "name": "sharp cheddar cheese, shredded",
+            "amount": "0.5 cup"
+          }
+        ],
+        "recipe_instructions": [
+          "Preheat oven to 425 degrees F. Lightly coat both sides of bread with cooking spray. ",
+          "Press each bread slice into the cup of a muffin tin. Bake at 425 for 10 minutes or until bread is lightly toasted. Cool slightly.",
+          "Reduce oven temperature to 350 degrees F.Combine milk and eggs, stirring well with a whisk. ",
+          "Divide the egg mixture evenly among bread cups. ",
+          "Sprinkle onions, if desired, and bacon evenly over tarts; top each with 1 tablespoon cheese.",
+          "Bake at 350 for 15 minutes or until set. Enjoy!"
+        ],
+        "Protein": 9,
+        "Fat": 4,
+        "Carbs": 15,
+        "Calories": 158,
+        "Fiber": 6,
+        "type": "non-vegetarian"
+      }
+    ],
+    "lunch": [
+      {
+        "meal_name": "Healthy_Cauliflower_Fried_Rice",
+        "ingredients": [
+          {
+            "name": "cauliflower, chopped into florets",
+            "amount": "1 head"
+          },
+          {
+            "name": "yellow onion, finely chopped",
+            "amount": "1 small onion"
+          },
+          {
+            "name": "fozen peas",
+            "amount": "0.5 cup"
+          },
+          {
+            "name": "carrots, cubed",
+            "amount": "0.5 cups"
+          },
+          {
+            "name": "eggs, beaten",
+            "amount": "2 eggs"
+          },
+          {
+            "name": "sesame oil",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "low sodium soy sauce",
+            "amount": "0.25 cups"
+          },
+          {
+            "name": "light brown sugar",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "ground ginger",
+            "amount": "0.25 tsp"
+          },
+          {
+            "name": "red pepper flakes",
+            "amount": "1 pinch"
+          },
+          {
+            "name": "green onions, chopped",
+            "amount": "2 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Chop head of cauliflower into florets and place in food processor.",
+          "Pulse until it starts to resemble rice; set aside.",
+          "Heat a large wok (or skillet) over medium heat and drizzle in sesame oil. Add onion, peas and carrots and saute until tender, about 2 minutes.",
+          "Meanwhile in a small bowl, whisk together soy sauce, brown sugar, ginger and red pepper flakes; set aside.",
+          "Slide veggie mixture to one side of the wok and add in the beaten eggs, scrambling until cooked through and then incorporate with the veggies.",
+          "Stir in cauliflower rice and pour the soy sauce over top, mixing well. Cook for an additional 3 to 4 minutes, until cauliflower is soft and tender.",
+          "Top with green onions, serve and enjoy!",
+          "Serving Size: 1¼ cup "
+        ],
+        "Protein": 6.5,
+        "Fat": 6.3,
+        "Carbs": 13.5,
+        "Calories": 131,
+        "Fiber": 3,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Kung_Pao_Tofu",
+        "ingredients": [
+          {
+            "name": "Tofu",
+            "amount": "100 gm"
+          },
+          {
+            "name": "Five spice powder",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "fozen peas",
+            "amount": "0.5 cup"
+          },
+          {
+            "name": "carrots, cubed",
+            "amount": "0.5 cups"
+          },
+          {
+            "name": "Ginger",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "sesame oil",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "low sodium soy sauce",
+            "amount": "0.25 cups"
+          },
+          {
+            "name": "Broccoli",
+            "amount": "14 oz"
+          },
+          {
+            "name": "Garlic",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "red pepper flakes",
+            "amount": "1 pinch"
+          },
+          {
+            "name": "green onions, chopped",
+            "amount": "2 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Chop head of brocoli into florets",
+          "Heat a large wok (or skillet) over medium heat and drizzle in sesame oil. Add Ginger,Garlic, peas and carrots and saute until tender, about 2 minutes.",
+          "Stir in broccoli and pour the soy sauce over top, mixing well. Cook for an additional 3 to 4 minutes, until broccoli is soft and tender.",
+          "Top with green onions, serve and enjoy!",
+          "Serving Size: 2 cup "
+        ],
+        "Protein": 16,
+        "Fat": 11,
+        "Carbs": 13.5,
+        "Calories": 550,
+        "Fiber": 6,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Roasted_Vegetable_Medley",
+        "ingredients": [
+          {
+            "name": "Yam",
+            "amount": "1 large"
+          },
+          {
+            "name": "Parsnip",
+            "amount": "1 count"
+          },
+          {
+            "name": "Baby carrots",
+            "amount": "1 cup"
+          },
+          {
+            "name": "Zucchini",
+            "amount": "1 count"
+          },
+          {
+            "name": "Asparagus",
+            "amount": "1 bunch"
+          },
+          {
+            "name": "sesame oil",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "Fresh basil",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "Broccoli",
+            "amount": "14 oz"
+          },
+          {
+            "name": "salt",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "red pepper flakes",
+            "amount": "1 pinch"
+          },
+          {
+            "name": "Black Pepper",
+            "amount": "1 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Preheat oven to 425 degrees F (220 degrees C). Grease 2 baking sheets with 1 tablespoon olive oil",
+          "Place the yams, parsnips, and carrots onto the baking sheets. Bake in the preheated oven for 30 minutes, then add the zucchini and asparagus,and drizzle with the remaining 1 tablespoon of olive oil. Continue baking until all of the vegetables are tender, about 30 minutes more.",
+          "Once tender,remove from the oven, and allow to cool for 30 minutes on the baking sheet."
+        ],
+        "Protein": 16,
+        "Fat": 3,
+        "Carbs": 12.5,
+        "Calories": 400,
+        "Fiber": 10,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Tilapia_Tacos_with_Peach_Mango_Salsa",
+        "ingredients": [
+          {
+            "name": "4oz tilapia fillets",
+            "amount": "3 fillets"
+          },
+          {
+            "name": "olive oil",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "fresh lemon juice",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "fresh parsley, minced",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "dried basil",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "peach mango salsa",
+            "amount": "3/4 cup"
+          },
+          {
+            "name": "corn tortillas",
+            "amount": "6 tortillas"
+          },
+          {
+            "name": "fresh cilantro leaves",
+            "amount": "1/2 cup"
+          }
+        ],
+        "recipe_instructions": [
+          "Place tilapia fillets in a large plastic zip-lock bag and set aside.",
+          "Whisk together olive oil, lemon juice, parsley, garlic, basil, salt and pepper and pour all over the fish, making sure to coat each fish completely.",
+          "Allow fish to marinate in the fridge for at least an hour.",
+          "Preheat your grill on medium-high heat and lightly coat with oil so the fish won't stick.",
+          "Place tilapia fillets on the grill and cook for about 3 to 4 minutes on each side until the fish is opaque and flakes easily with a fork.",
+          "Meanwhile, brush the tortillas lightly with oil and place on the grill for about 20 seconds.",
+          "Fill warm tortillas with the cooked tilapia, 2 tablespoons of peach mango salsa and top with some cilantro. Enjoy!",
+          "serving size: 1 taco"
+        ],
+        "Protein": 11.8,
+        "Fat": 7.2,
+        "Carbs": 17.9,
+        "Calories": 150.5,
+        "Fiber": 2.3,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Springmix_salad_with_feta",
+        "ingredients": [
+          {
+            "name": "baby spring mix",
+            "amount": "1 cup"
+          },
+          {
+            "name": "breaded chicken",
+            "amount": "10 oz"
+          },
+          {
+            "name": "fresh lemon juice",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "fresh parsley, minced",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "feta",
+            "amount": "5 oz"
+          },
+          {
+            "name": "black pepper",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "balsamic vinaigrette",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "oilve oil",
+            "amount": "1 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Whisk together olive oil,balsamic vinaigrette, lemon juice, parsley, salt and pepper",
+          "Combine spring mix,feta and chicken in a bowl",
+          "Add the liquid mixture to the bowl and mix well",
+          "Serve in a bowl"
+        ],
+        "Protein": 13.55,
+        "Fat": 33.45,
+        "Carbs": 13.07,
+        "Calories": 393,
+        "Fiber": 4.6,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Romaine_salad_with_avocado",
+        "ingredients": [
+          {
+            "name": "Romaine/iceberg blend",
+            "amount": "1 cup"
+          },
+          {
+            "name": "tofu",
+            "amount": "10 oz"
+          },
+          {
+            "name": "fresh lemon juice",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "fresh parsley, minced",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "avocado",
+            "amount": "5 oz"
+          },
+          {
+            "name": "black pepper",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "balsamic vinaigrette",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "oilve oil",
+            "amount": "1 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Whisk together olive oil,balsamic vinaigrette, lemon juice, parsley, salt and pepper",
+          "Combine romaine,avocado and tofu in a bowl",
+          "Add the liquid mixture to the bowl and mix well",
+          "Serve in a bowl"
+        ],
+        "Protein": 7.55,
+        "Fat": 26.45,
+        "Carbs": 14.07,
+        "Calories": 300,
+        "Fiber": 5.7,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Slow_Cooker_Chicken_Fajita_and_Quinoa_Soup",
+        "ingredients": [
+          {
+            "name": "skinless chicken breast",
+            "amount": "1.5 lbs"
+          },
+          {
+            "name": "uncooked quinoa, rinsed",
+            "amount": "1 cup"
+          },
+          {
+            "name": "bell peppers, chopped",
+            "amount": "3"
+          },
+          {
+            "name": "onion, chopped",
+            "amount": "1 medium"
+          },
+          {
+            "name": "garlic, minced",
+            "amount": "3 cloves"
+          },
+          {
+            "name": "low sodium chicken broth",
+            "amount": "4 cups"
+          },
+          {
+            "name": "lime juice",
+            "amount": "1 lime"
+          },
+          {
+            "name": "diced tomatoes",
+            "amount": "1 can"
+          },
+          {
+            "name": "green chiles",
+            "amount": "1 can"
+          },
+          {
+            "name": "black beans, drained and rinsed",
+            "amount": "1 can"
+          },
+          {
+            "name": "frozen corn",
+            "amount": "1 cup"
+          },
+          {
+            "name": "chili powder",
+            "amount": "1.5 Tbsp"
+          },
+          {
+            "name": "cumin",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "paprika",
+            "amount": "2 tsp"
+          },
+          {
+            "name": "sea salt",
+            "amount": "2 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "In a 6-quart slow cooker, add chicken and the rest of ingredients, cover and place on high for 3 to 4 hours or low 6 to 8 hours.",
+          "Remove chicken and shred with two forks then add back into the slow cooker. Season with additional salt and seasonings if needed.",
+          "Spoon soup into bowls and top with favorite toppings, enjoy!",
+          "Serving Size: 2 cups"
+        ],
+        "Protein": 40,
+        "Fat": 4,
+        "Carbs": 67,
+        "Calories": 512,
+        "Fiber": 14.6,
+        "type": "non-vegetarian"
+      }
+    ],
+    "dinner": [
+      {
+        "meal_name": "Zucchini_Noodles_with_Creamy_Avocado_Pesto",
+        "ingredients": [
+          {
+            "name": "zuccini, spiralized",
+            "amount": "6 large zucchini"
+          },
+          {
+            "name": "olive oil",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "ripe avocados",
+            "amount": "2 avocados"
+          },
+          {
+            "name": "fresh basil leaves",
+            "amount": "1 cup"
+          },
+          {
+            "name": "garlic cloves",
+            "amount": "3 cloves"
+          },
+          {
+            "name": "pine nuts",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "lemon juice",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "sea salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "olive oil",
+            "amount": "3 Tbsp"
+          },
+          {
+            "name": "cracked black pepper",
+            "amount": "to taste"
+          }
+        ],
+        "recipe_instructions": [
+          "Spiralize your zucchini and set aside on paper towels so that any excess water is soaked up.",
+          "In a food processor, add avocados, basil leaves, garlic, pine nuts, lemon juice and sea salt and pulse until finely chopped.",
+          "Then with the motor still running, add olive oil in a slow stream until emulsified and creamy.",
+          "Drizzle olive oil in a large skillet over medium high heat then add zucchini noodles, cooking for about 1 to 2 minutes until tender.",
+          "Add zucchini noodles to a large bowl and toss with avocado pesto. Season with cracked pepper and a little Parmesan, serve and enjoy!",
+          "Serving Size: 1 1/2 cup"
+        ],
+        "Protein": 4.8,
+        "Fat": 17.1,
+        "Carbs": 13.2,
+        "Calories": 214,
+        "Fiber": 6.1,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Moong_Sprout_Salad",
+        "ingredients": [
+          {
+            "name": "Moong dal",
+            "amount": "2 bowls "
+          },
+          {
+            "name": "olive oil",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "Cucumber",
+            "amount": "1 cucumber"
+          },
+          {
+            "name": "fresh basil leaves",
+            "amount": "1 cup"
+          },
+          {
+            "name": "lemon juice",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "sea salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "cracked black pepper",
+            "amount": "to taste"
+          }
+        ],
+        "recipe_instructions": [
+          "Soak moong dal overnight and then allow it to sprout for 8 hours",
+          "In a bowl, add cucumber, basil leaves,lemon juice and sea salt and combine well.",
+          "Then add olive oil and sprouted moong dal and mix well and enjoy",
+          "Serving Size: 2 cup"
+        ],
+        "Protein": 17,
+        "Fat": 4,
+        "Carbs": 13.2,
+        "Calories": 200,
+        "Fiber": 7,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Penne_with_Parmesan_Cheese_and_Tomato_Sauce",
+        "ingredients": [
+          {
+            "name": "Penne Pasta",
+            "amount": "125 gms "
+          },
+          {
+            "name": "olive oil",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "Marinara Sauce",
+            "amount": "3 oz"
+          },
+          {
+            "name": "fresh basil leaves",
+            "amount": "1 cup"
+          },
+          {
+            "name": "Parmesan Cheese",
+            "amount": "2 oz"
+          },
+          {
+            "name": "sea salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "cracked black pepper",
+            "amount": "to taste"
+          }
+        ],
+        "recipe_instructions": [
+          "Coock penne pasta as directed in the package",
+          "In a hot pan add olive oil, marinara sauce,fresh basil,salt,pepper and finally pasta and stir well",
+          "Then add olive oil and parmesan cheese on top and enjoy",
+          "Serving Size: 2 cup"
+        ],
+        "Protein": 13,
+        "Fat": 7,
+        "Carbs": 15.2,
+        "Calories": 650,
+        "Fiber": 3,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Lemon_Chicken_with_Thyme",
+        "ingredients": [
+          {
+            "name": "chicken breast",
+            "amount": "3-4 breasts"
+          },
+          {
+            "name": "fresh lemon juice",
+            "amount": "2 lemons"
+          },
+          {
+            "name": "lemon zest",
+            "amount": "1 lemon"
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": "2 cloves"
+          },
+          {
+            "name": "fresh thyme",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "sea salt",
+            "amount": "1/2 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Preheat oven to 375 degrees F.",
+          "Whisk together lemon juice, lemon zest, garlic, thyme, salt and pepper; set aside.",
+          "Place chicken breasts in a baking dish and pour mixture over top, making sure to completely coat them.",
+          "Bake for about 40 minutes (depending on size of chicken) until juices run clear. Enjoy!"
+        ],
+        "Protein": 25,
+        "Fat": 4,
+        "Carbs": 2.4,
+        "Calories": 150,
+        "Fiber": 0.08,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Teriyaki_Salmon",
+        "ingredients": [
+          {
+            "name": "salmon",
+            "amount": "162 gm"
+          },
+          {
+            "name": "sesame oil",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "fresh lemon juice",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "soya sauce",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "ginger",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "ground mustard",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "salt",
+            "amount": "1/2 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Mix sesame oil, lemon juice, soy sauce, ground mustard and ginger in a small saucepan over low heat. Bring to a simmer. Set aside 1/2 cup of marinade for basting.",
+          "Pour remaining marinade into a resealable plastic bag and place salmon into the marinade. Squeeze air out of the bag, seal, and marinate the salmon steaks for at least 1 hour (2 hours for better flavor). Drain and discard used marinade.",
+          "Set oven rack about 4 inches from the heat source and preheat the oven's broiler. Place salmon steaks into a broiler pan and broil for 5 minutes. Brush steaks with reserved marinade, turn, and broil until fish is opaque and flakes easily, about 5 more minutes. Brush again with marinade.",
+          "Serve in a plate"
+        ],
+        "Protein": 28,
+        "Fat": 8,
+        "Carbs": 9,
+        "Calories": 230,
+        "Fiber": 0,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Tofu_Bibimbap",
+        "ingredients": [
+          {
+            "name": "cooked rice",
+            "amount": "1 cup"
+          },
+          {
+            "name": "sesame oil",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "carrot",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "soya sauce",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "zucchini",
+            "amount": "1/4 cup"
+          },
+          {
+            "name": "greenonion",
+            "amount": "1/3 cup"
+          },
+          {
+            "name": "salt",
+            "amount": "1/2 tsp"
+          },
+          {
+            "name": "pepper",
+            "amount": "1/2 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Heat sesame oil in a large skillet over medium heat; cook and stir carrot and zucchini in the hot oil until vegetables begin to soften, about 5 minutes.Cook and stir until carrots are tender, about 5 more minutes. Season to taste with salt and set vegetables aside.",
+          "Stir cooked rice, green onions, soy sauce, and black pepper in the same skillet until the rice is hot.",
+          "To serve, divide hot cooked rice mixture between 3 serving bowls and top each bowl with 1/3 of the vegetable mixture. Serve sweet red chili sauce on the side for mixing into bibimbap."
+        ],
+        "Protein": 8,
+        "Fat": 3,
+        "Carbs": 32,
+        "Calories": 182,
+        "Fiber": 0,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Lemon_and_Herb_Spaghetti_Squash_with_Roasted_Shrimp",
+        "ingredients": [
+          {
+            "name": "spaghetti squash",
+            "amount": "2 small or medium"
+          },
+          {
+            "name": "shrimp, peelded and deveined",
+            "amount": "12 oz large"
+          },
+          {
+            "name": "olive oil",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "butter",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "salt and pepper",
+            "amount": "to taste"
+          },
+          {
+            "name": "garlic, minced",
+            "amount": "3 cloves"
+          },
+          {
+            "name": "lemon juice",
+            "amount": "2 lemons"
+          },
+          {
+            "name": "lemon zest",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "dry white wine",
+            "amount": "1.5 cups"
+          },
+          {
+            "name": "dijon mustard",
+            "amount": "1 tsp"
+          },
+          {
+            "name": "red pepper flakes",
+            "amount": "0.25 tsp"
+          },
+          {
+            "name": "plain greek yogurt",
+            "amount": "0.25 cup"
+          },
+          {
+            "name": "fresh parsley, chopped",
+            "amount": "2 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "To make the spaghetti squash, preheat oven to 350 degrees F and cut squash right down the middle. Scoop out all the seeds and place cut side down on a baking sheet lightly sprayed with oil so they don't stick. Bake the squash in the oven for 45 minutes until tender.",
+          "Meanwhile in a large skillet, melt oil and butter over medium high heat, add shrimp and season with salt and pepper, sauteing for about 2 minutes. Add garlic and saute an additional 2 minutes until shrimp is cooked through; remove from heat and set aside (you don't want to overcook the shrimp)",
+          "Add lemon juice, lemon zest, white wine, Dijon mustard and red pepper flakes and bring to a boil. Reduce heat and allow sauce to simmer until the spaghetti squash has finished baking.",
+          "Remove the skillet from heat and take squash out of the oven. Scrape out all the strands of spaghetti using a fork, throw spaghetti squash into a colander and place in the sink, pressing gently with a paper towel to allow any excess water to drain out.",
+          "Whisk yogurt in with the sauce until creamy and smooth then stir in chopped parsley. Toss with spaghetti squash and shrimp, serve and enjoy!",
+          "Serving size: 2 cups spaghetti squash and 5 shrimp"
+        ],
+        "Protein": 9.7,
+        "Fat": 10.5,
+        "Carbs": 25.7,
+        "Calories": 235,
+        "Fiber": 6.3,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Maple_Balsamic_&_Herb_Chicken",
+        "ingredients": [
+          {
+            "name": "balsamic vinegar",
+            "amount": "0.25 cup"
+          },
+          {
+            "name": "pure maple syrup",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "dijon mustard",
+            "amount": "1 Tbsp"
+          },
+          {
+            "name": "garlic, minced",
+            "amount": "2 cloves"
+          },
+          {
+            "name": "salt and pepper",
+            "amount": "to taste"
+          },
+          {
+            "name": "fresh thyme",
+            "amount": "0.5 tsp"
+          },
+          {
+            "name": "cayenne",
+            "amount": "0.125 tsp"
+          },
+          {
+            "name": "boneless skinless chicken breast",
+            "amount": "4 pieces"
+          },
+          {
+            "name": "olive oil",
+            "amount": "2 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "In small bowl, whisk together balsamic vinegar, maple syrup, mustard, garlic, thyme, cayenne and salt and pepper. Pour sauce into a large plastic baggy and add chicken breasts. ",
+          "(I like to pound out the chicken breasts to ensure they each have the same thickness so they cook evenly) Marinate the chicken for at least 30 minutes or even overnight.",
+          "Heat olive oil in a large skillet over medium-high heat until oil shimmers, about 3 to 4 minutes. Using tongs, remove chicken breasts from baggy (leaving the marinade inside) and arrange in the pan. ",
+          "Allow chicken to cook for about 7 to 8 minutes, without moving, so a nice golden-brown crust forms. Flip chicken over and cook the other side for another 7 to 8 minutes. ",
+          "You'll know the chicken is done when the juices run clear and the inside temp has reached 160 to 165 degrees.Remove chicken and place on a cutting board to rest then pour the remaining marinade into the heated skillet. ",
+          "Scrape up any brown bits and allow marinade to bubble up and cook, stirring occasionally.Add chicken back into the skillet, coating well. Serve and enjoy!",
+          "Serving size: 2 chicken breasts"
+        ],
+        "Protein": 53.8,
+        "Fat": 20,
+        "Carbs": 19.6,
+        "Calories": 501,
+        "Fiber": 0,
+        "type": "non-vegetarian"
+      }
+    ],
+    "snack": [
+      {
+        "meal_name": "Homemade_trail_mix",
+        "ingredients": [
+          {
+            "name": "roasted sea salted cashews",
+            "amount": "1 cup"
+          },
+          {
+            "name": "raw pecans",
+            "amount": "1 cup"
+          },
+          {
+            "name": "organic dried cranberries",
+            "amount": "1 cup"
+          }
+        ],
+        "recipe_instructions": [
+          "Combine the ingredients in a bowl.",
+          "Divide into 8 servings.",
+          "Enjoy!"
+        ],
+        "Protein": 6.5,
+        "Fat": 25,
+        "Carbs": 23.2,
+        "Calories": 320,
+        "Fiber": 1.9,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Steamed_Broccoli_with_fried_eggs",
+        "ingredients": [
+          {
+            "name": "Broccoli",
+            "amount": "2 heads"
+          },
+          {
+            "name": "Eggs",
+            "amount": "2 count"
+          },
+          {
+            "name": "salt",
+            "amount": "1 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Saute broccoli in a pan until bright green",
+          "Fry 2 eggs in a pan ",
+          "Combine eggs with brocoli add salt to it",
+          "Enjoy!"
+        ],
+        "Protein": 16,
+        "Fat": 4,
+        "Carbs": 23.2,
+        "Calories": 550,
+        "Fiber": 7,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Microwaved_Baked_Apple",
+        "ingredients": [
+          {
+            "name": "medium apple",
+            "amount": "1 apple"
+          },
+          {
+            "name": "cornstarch",
+            "amount": "0.5 tsp"
+          },
+          {
+            "name": "cinnamon",
+            "amount": "0.5 tsp"
+          },
+          {
+            "name": "water",
+            "amount": "1 oz"
+          },
+          {
+            "name": "sugar",
+            "amount": "1 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Remove the core of the apple and cut into small wedges.",
+          "Add wedges to a bowl and sprinkle the cornstarch, cinnamon, water, and sugar on top.",
+          "Microwave covered for about 1 minute.",
+          "Remove from microwave and mix apple pieces into the juices at the bottom of the bowl.",
+          "Enjoy!"
+        ],
+        "Protein": 0,
+        "Fat": 0,
+        "Carbs": 27.8,
+        "Calories": 101,
+        "Fiber": 5.3,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Popcorn",
+        "ingredients": [
+          {
+            "name": "corn",
+            "amount": "3 cups"
+          },
+          {
+            "name": "salt",
+            "amount": "1 tsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Add corn in a pan and air pop on a stove",
+          "Add salt to popped corn",
+          "Enjoy!"
+        ],
+        "Protein": 2.9,
+        "Fat": 1,
+        "Carbs": 3.6,
+        "Calories": 92,
+        "Fiber": 3.6,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Baby_Carrot_And_Hummus",
+        "ingredients": [
+          {
+            "name": "carrots",
+            "amount": "1 cup"
+          },
+          {
+            "name": "hummus",
+            "amount": "2 Tbsp"
+          }
+        ],
+        "recipe_instructions": [
+          "Dip baby carrots in hummus",
+          "Enjoy!"
+        ],
+        "Protein": 2.9,
+        "Fat": 1,
+        "Carbs": 3.6,
+        "Calories": 92,
+        "Fiber": 3.6,
+        "type": "vegetarian"
+      },
+      {
+        "meal_name": "Skinny_Buffalo_Chicken_Bites",
+        "ingredients": [
+          {
+            "name": "shredded cooken chicken",
+            "amount": "3 cups"
+          },
+          {
+            "name": "hot sauce",
+            "amount": "0.3 cup"
+          },
+          {
+            "name": "fat-free cream cheese, softened",
+            "amount": "3.5 oz"
+          },
+          {
+            "name": "shredded cheddar cheese",
+            "amount": "1 cup"
+          },
+          {
+            "name": "green onion, chopped",
+            "amount": "0.25 cup"
+          },
+          {
+            "name": "all purpose flour",
+            "amount": "0.5 cup"
+          },
+          {
+            "name": "eggs, lightly beaten",
+            "amount": "2"
+          },
+          {
+            "name": "corn flakes cereal, crushed",
+            "amount": "3 cups"
+          }
+        ],
+        "recipe_instructions": [
+          "Preheat oven to 350 degrees F. In a large bowl, combine shredded chicken, hot sauce and cream cheese; mix well. ",
+          "Stir in cheddar cheese and green onions and set aside. Using 3 separate bowls, set out the flour, eggs and crushed cereal. ",
+          "Scoop out chicken mixture and make 1½-inch balls, first rolling in flour, then dipping in egg and last coating with cereal. ",
+          "Repeat this until you have about 30 balls. Place balls on sheet and bake for 20 to 25 minutes, until golden.",
+          "Serve with blue cheese or ranch dressing and enjoy!",
+          "Serving size: 3 balls"
+        ],
+        "Protein": 11.9,
+        "Fat": 4,
+        "Carbs": 9.3,
+        "Calories": 126,
+        "Fiber": 0.3,
+        "type": "non-vegetarian"
+      },
+      {
+        "meal_name": "Snack_Tray",
+        "ingredients": [
+          {
+            "name": "rye crackers",
+            "amount": "15 crackers"
+          },
+          {
+            "name": "peanut butter",
+            "amount": "2 Tbsp"
+          },
+          {
+            "name": "deli turkey slices",
+            "amount": "4 oz"
+          },
+          {
+            "name": "avocado",
+            "amount": "1"
+          }
+        ],
+        "recipe_instructions": [
+          "Eat and Enjoy!"
+        ],
+        "Protein": 21.9,
+        "Fat": 42,
+        "Carbs": 22,
+        "Calories": 694,
+        "Fiber": 12,
+        "type": "non-vegetarian"
+      }
+    ]
+  }
+]

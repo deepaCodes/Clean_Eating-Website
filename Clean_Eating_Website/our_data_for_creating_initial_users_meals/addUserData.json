@@ -1,0 +1,43 @@
+  //add users individually
+  //info for adding users
+  //user 1
+  {
+    "profile": {
+      "name": "jane doe",
+      "userName": "jdoe",
+      "weight": 150,
+      "height": 66,
+      "age": 28
+    }
+  }
+  //user 2
+  {
+
+    "profile": {
+      "name": "Sarah Thompson",
+      "userName": "sthompson",
+      "weight": 150,
+      "height": 60,
+      "age": 20
+    }
+  }
+  //user 3
+  {
+    "profile": {
+      "name": "Daniel Bruister",
+      "userName": "dbruister",
+      "weight": 250,
+      "height": 70,
+      "age": 30
+    }
+  }
+  //user 4
+  {
+    "profile": {
+      "name": "James Charming",
+      "userName": "jcharming",
+      "weight": 150,
+      "height": 70,
+      "age": 25
+    }
+  }

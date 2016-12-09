@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Clean Eating Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <style>
+        body        { padding-top:80px; }
+    </style>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 id="the-heading"><b>Welcome to our clean eating website!</b></h1>
+        <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#191970">Clean Eating Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/meal_collection/" style="color:#191970">Home</a></li>
+      <li><a href="/meal_collection/editProfile" style="color:#191970">Edit Profile</a></li>
+      <li ><a href="/meal_collection/generateMeals" style="color:#191970">User Profile</a></li>
+      <li><a href="/comments/seeComments" style="color:#191970">Comments</a></li>
+      <li><a href="/comments/getUserComments" style="color:#191970">See/Delete Your Comments</a></li>
+      <li><a href="/meal_collection/logout" style="color:#191970; textalign:right"><span class="glyphicon glyphicon-log-out"></span>LOGOUT</a></li>
+     
+    </ul>
+  </div>
+</nav>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                {{{body}}}
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="/public/js/new_comment_AJAX.js"></script>
+    
+
+
+</body>
+
+</html>
