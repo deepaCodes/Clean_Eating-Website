@@ -14,7 +14,7 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "mongodb": "^2.1.18",
+    "mongodb": "^3.6.1",
     "node-uuid": "^1.4.7",
      "passport" : "~0.1.17",         
     "passport-local" : "~0.1.6",  
